@@ -44,26 +44,9 @@ public class DistributeMediaController {
     )
     @RequestMapping("/receive")
     public String receiveMedia(@RequestParam("data") String paramsJson){
-        System.out.println(paramsJson);
-
-
-
-//
-//        try {
-//            Thread.sleep(30000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-
-
-//        List<FileHostDownloadRoleVo> fileHostDownloadRoleVos = JSONArray.parseArray(paramsJson, FileHostDownloadRoleVo.class);
         List<FileHostDownloadRole> fileHostDownloadRoles = JSONArray.parseArray(paramsJson, FileHostDownloadRole.class);
         log.info("{}",fileHostDownloadRoles);
-        /*Thread thread=new Thread(()->{*/
         downloadMediaService.receiveMediaListAsync(fileHostDownloadRoles);
-    /*    });*/
-       // thread.start();
-
         return "接收成功！";
     }
 

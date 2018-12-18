@@ -232,16 +232,6 @@ public class FileDownHandler {
     @Async
     public void receiveMediaAsync(FileHostDownloadRole vo) {
         ReciveResultModel resultModel = receiveMedia(vo);
-
-//        for (int i = 0; i < 3; i++) {
-//
-//            resultModel = receiveMedia(vo);
-//            if (resultModel.getResultCode() == 0){
-//                return;
-//            }
-//        }
-
-//        this.downReport(vo.getId());
     }
 
 

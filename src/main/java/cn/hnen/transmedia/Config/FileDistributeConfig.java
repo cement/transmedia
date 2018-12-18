@@ -57,10 +57,8 @@ public class FileDistributeConfig {
 
 
     public static int  downloadBufferSize;//复制文件缓冲区大小,单位:byte；
-    public static long mediaKeepTime ;
 
-//    public static String extraPrefix = "user:";
-//    public static String specifyPalyTime ="specifyPalyTime";  //记录文件播放时间，固定
+
 
 
 }
