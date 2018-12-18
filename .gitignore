@@ -25,5 +25,12 @@
 /.nb-gradle/
 
 ### mvn ###
-/mvnw
-/mvnw.cmd
+mvnw
+mvnw.cmd
+.mvn
+
+### h2 ###
+/H2
+### log ###
+/applog
+
