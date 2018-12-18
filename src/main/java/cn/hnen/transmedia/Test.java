@@ -25,23 +25,7 @@ public class Test {
 
 
     public static void main(String[] args) {
-//        FileHostDownloadRoleVo vo1 = new FileHostDownloadRoleVo(8787878L, "111.jpg", "2018-01-01");
-//        FileHostDownloadRoleVo vo2 = new FileHostDownloadRoleVo(9898989L, "222.jpg", "2018-01-01");
-//
-//        ArrayList<FileHostDownloadRoleVo> list = new ArrayList<>();
-//        list.add(vo1);
-//        list.add(vo2);
-//        System.out.println(JSON.toJSONString(list));
 
-//        Date date = new Date();//当前日期
-//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");//格式化对象
-//        Calendar calendar = Calendar.getInstance();//日历对象
-//        calendar.setTime(date);//设置当前日期
-//        calendar.add(Calendar.DATE, -1);//月份减一
-//
-//        Date date1 = new Date(calendar.getTimeInMillis());
-//        System.out.println(calendar.getTimeInMillis());//输出格式化的日期
-//
 
 
         testFileCreate();
