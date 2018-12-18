@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <contextName>CasedataImport</contextName>
+    <!--<property name="LOG_PATH" value="./" />-->
+    <!--&lt;!&ndash;设置系统日志目录&ndash;&gt;-->
+    <!--<property name="LOG_DIR" value="logs" />-->
+
+
+    <springProperty scop="context" name="log-base-path" source="log.base.path" defaultValue="./logs"/>
+    <springProperty scop="context" name="log-app-file-level" source="log.app.file.level" defaultValue="info"/>
+    <springProperty scop="context" name="log-spring-file-level" source="log.spring.file.level" defaultValue="warn"/>
+    <springProperty scop="context" name="log-console-level" source="log.console.level" defaultValue="info"/>
+
+
+    <!-- 彩色日志 -->
+    <!-- 彩色日志依赖的渲染类 -->
+    <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter" />
+    <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter" />
+    <conversionRule conversionWord="wEx" converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter" />
+    <!-- 彩色日志格式 -->
+    <property name="CONSOLE_LOG_PATTERN" value="[${CONSOLE_LOG_PATTERN:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint}] [%clr(${LOG_LEVEL_PATTERN:-%4p})] [%clr(${PID:- }){magenta}] %clr(*){faint} [%clr(%14.14t){faint}] [%clr(%logger){cyan}.%clr(%method){blue}:%-3line] %clr(:){red} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}" />
+
+    <appender name="log-console-appender" class="ch.qos.logback.core.ConsoleAppender">
+        <!--encoder 默认配置为PatternLayoutEncoder-->
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}}</pattern>
+            <!--<pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%-4.4level]  [%thread] [%logger.%method:%-3line] : %n\t\t=>>> %msg%n</pattern>-->
+            <charset>utf-8</charset>
+        </encoder>
+        <!--此日志appender是为开发使用，只配置最底级别，控制台输出的日志级别是大于或等于此级别的日志信息-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>debug</level>
+        </filter>
+    </appender>
+
+
+
+
+
+
+    <!-- 配置 app 日志输出至单独的日志文件中 -->
+    <appender name="app-log-file-appender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名-->
+            <FileNamePattern>${log-base-path}/applog/applog-%d{yyyyMMdd}.log</FileNamePattern>
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder   class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <!-- 日志输出编码 -->
+            <layout class="ch.qos.logback.classic.PatternLayout">
+                <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+                <pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%-4.4level]  [%thread] [%logger.%method:%-3line] : %n\t\t=>>> %msg%n</pattern>
+            </layout>
+            <charset>utf-8</charset>
+            <!--<charset class="java.nio.charset.Charset">UTF-8</charset>-->
+        </encoder>
+        <!--日志文件最大的大小-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>10MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+
+    <!-- 配置 spring 日志输出至单独的日志文件中 -->
+    <appender name="spring-log-file-appender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名-->
+            <FileNamePattern>${log-base-path}/springlog/springlog-%d{yyyyMMdd}.log</FileNamePattern>
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder   class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <!-- 日志输出编码 -->
+            <layout class="ch.qos.logback.classic.PatternLayout">
+                <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+                <pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%-4.4level]  [%thread] [%logger.%method:%-3line] : %n\t\t=>>> %msg%n</pattern>
+            </layout>
+            <charset>utf-8</charset>
+            <!--<charset class="java.nio.charset.Charset">UTF-8</charset>-->
+        </encoder>
+        <!--日志文件最大的大小-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>10MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <!--需要将日志单独输出的包路径-->
+    <logger name="org.springframework" level="${log-spring-file-level}}" >
+        <appender-ref ref="spring-log-file-appender"/>
+    </logger>
+
+    <logger name="cn.hnen.transmedia" level="${log.app.file.level}" additivity="true">
+        <appender-ref ref="app-log-file-appender"/>
+    </logger>
+
+    <root level="${log-console-level}">
+        <appender-ref ref="log-console-appender" />
+    </root>
+</configuration>
