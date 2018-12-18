@@ -1,0 +1,1242 @@
+[2018-12-17 09:04:01] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 2352 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 09:04:01] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 09:04:01] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 09:04:07] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 6.715 seconds (JVM running for 8.606)
+[2018-12-17 09:05:37] [INFO]  [http-nio-8000-exec-10] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:286] : 
+		=>>> 设备端 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 09:05:38] [INFO]  [http-nio-8000-exec-10] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:364] : 
+		=>>> 设备端 下载完成  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4,文件大小:9044029,耗时 707毫秒
+[2018-12-17 09:36:49] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 9744 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 09:36:49] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 09:36:49] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 09:36:59] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 10.672 seconds (JVM running for 12.343)
+[2018-12-17 09:49:25] [INFO]  [http-nio-8000-exec-1] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:286] : 
+		=>>> 设备端 开始下载 a.jpg
+[2018-12-17 09:49:25] [RROR]  [http-nio-8000-exec-1] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:305] : 
+		=>>> 设备端 下载失败！  文件名称: a.jpg;错误信息：文件不存在!
+[2018-12-17 10:23:06] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 14464 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 10:23:06] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 10:23:06] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 10:23:16] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 10.184 seconds (JVM running for 11.898)
+[2018-12-17 10:23:28] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 19412 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 10:23:28] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 10:23:28] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 10:23:39] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.136 seconds (JVM running for 12.822)
+[2018-12-17 10:23:53] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 4816 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 10:23:53] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 10:23:53] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 10:26:06] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 15780 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 10:26:06] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 10:26:06] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 10:26:59] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 15412 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 10:26:59] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 10:26:59] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 10:27:04] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 6.141 seconds (JVM running for 8.071)
+[2018-12-17 13:56:06] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 23796 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 13:56:06] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 13:56:06] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 13:56:59] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 5868 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 13:56:59] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 13:56:59] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 13:57:05] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 7.5 seconds (JVM running for 9.259)
+[2018-12-17 13:59:03] [INFO]  [http-nio-8000-exec-2] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:320] : 
+		=>>> 设备端 开始下载 a.jpg
+[2018-12-17 13:59:03] [RROR]  [http-nio-8000-exec-2] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:339] : 
+		=>>> 设备端 下载失败！  文件名称: a.jpg;错误信息：文件不存在!
+[2018-12-17 13:59:56] [INFO]  [http-nio-8000-exec-3] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:320] : 
+		=>>> 设备端 开始下载 1544819651993cce9dcb96495483c8d7aee37ab608f87.mp4
+[2018-12-17 13:59:56] [INFO]  [http-nio-8000-exec-3] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:398] : 
+		=>>> 设备端 下载完成  文件名称: 1544819651993cce9dcb96495483c8d7aee37ab608f87.mp4,文件大小:14972994,耗时 423毫秒
+[2018-12-17 14:08:40] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 12060 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 14:08:40] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 14:08:40] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 14:08:51] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.227 seconds (JVM running for 12.945)
+[2018-12-17 14:09:07] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 10412 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 14:09:07] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 14:09:07] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 14:09:18] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.451 seconds (JVM running for 13.255)
+[2018-12-17 14:10:37] [INFO]  [http-nio-8000-exec-1] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:320] : 
+		=>>> 设备端 开始下载 a.jpg
+[2018-12-17 14:10:37] [RROR]  [http-nio-8000-exec-1] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:339] : 
+		=>>> 设备端 下载失败！  文件名称: a.jpg;错误信息：文件不存在!
+[2018-12-17 14:11:00] [INFO]  [http-nio-8000-exec-3] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:320] : 
+		=>>> 设备端 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 14:11:00] [INFO]  [http-nio-8000-exec-3] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:398] : 
+		=>>> 设备端 下载完成  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4,文件大小:1933437,耗时 93毫秒
+[2018-12-17 14:13:08] [INFO]  [http-nio-8000-exec-6] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:320] : 
+		=>>> 设备端 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 14:13:08] [INFO]  [http-nio-8000-exec-6] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:398] : 
+		=>>> 设备端 下载完成  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4,文件大小:1933437,耗时 62毫秒
+[2018-12-17 14:13:32] [INFO]  [http-nio-8000-exec-8] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:320] : 
+		=>>> 设备端 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 14:13:32] [INFO]  [http-nio-8000-exec-8] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:398] : 
+		=>>> 设备端 下载完成  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4,文件大小:1933437,耗时 67毫秒
+[2018-12-17 14:25:18] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 8420 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 14:25:18] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 14:25:18] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 14:25:28] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.261 seconds (JVM running for 12.926)
+[2018-12-17 14:25:33] [INFO]  [http-nio-8000-exec-1] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:320] : 
+		=>>> 设备端 开始下载 a.jpg
+[2018-12-17 14:25:33] [RROR]  [http-nio-8000-exec-1] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:339] : 
+		=>>> 设备端 下载失败！  文件名称: a.jpg;错误信息：文件不存在!
+[2018-12-17 14:25:34] [INFO]  [http-nio-8000-exec-2] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:320] : 
+		=>>> 设备端 开始下载 a.jpg
+[2018-12-17 14:25:34] [RROR]  [http-nio-8000-exec-2] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:339] : 
+		=>>> 设备端 下载失败！  文件名称: a.jpg;错误信息：文件不存在!
+[2018-12-17 14:25:56] [INFO]  [http-nio-8000-exec-4] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:320] : 
+		=>>> 设备端 开始下载 15448182142902c078a208c12474eb27742af83a5d561.mp4
+[2018-12-17 14:25:57] [INFO]  [http-nio-8000-exec-4] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:398] : 
+		=>>> 设备端 下载完成  文件名称: 15448182142902c078a208c12474eb27742af83a5d561.mp4,文件大小:20137790,耗时 831毫秒
+[2018-12-17 14:26:54] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 6720 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 14:26:54] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 14:26:54] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 14:27:05] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.346 seconds (JVM running for 13.055)
+[2018-12-17 14:38:09] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 14204 (F:\TransData\transmedia\target\classes started by Administrator in F:\TransData\transmedia)
+[2018-12-17 14:38:09] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 14:38:09] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 14:38:20] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.562 seconds (JVM running for 13.321)
+[2018-12-17 15:01:57] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 20408 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:01:57] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:01:57] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:02:07] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.262 seconds (JVM running for 13.108)
+[2018-12-17 15:05:08] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 8152 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:05:08] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:05:08] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:05:22] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 15.108 seconds (JVM running for 17.045)
+[2018-12-17 15:05:59] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 16924 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:05:59] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:05:59] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:06:13] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 15.102 seconds (JVM running for 17.148)
+[2018-12-17 15:12:07] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 12884 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:12:07] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:12:07] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:12:18] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.528 seconds (JVM running for 13.272)
+[2018-12-17 15:13:36] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 8420 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:13:36] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:13:36] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:13:47] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 12.241 seconds (JVM running for 13.907)
+[2018-12-17 15:15:43] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 11716 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:15:43] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:15:43] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:15:54] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.641 seconds (JVM running for 13.23)
+[2018-12-17 15:18:57] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 3360 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:18:57] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:18:57] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:19:07] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.495 seconds (JVM running for 13.203)
+[2018-12-17 15:20:45] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 6988 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:20:45] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:20:45] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:20:56] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.711 seconds (JVM running for 13.325)
+[2018-12-17 15:22:06] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 3168 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:22:06] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:22:06] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:22:18] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 13.282 seconds (JVM running for 14.921)
+[2018-12-17 15:22:19] [INFO]  [http-nio-8001-exec-10] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e242.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:22:19] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:22:19] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:22:19] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:22:19] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e242.mp4
+[2018-12-17 15:22:19] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg,文件大小:94K,耗时 529毫秒
+[2018-12-17 15:22:19] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4,文件大小:1888K,耗时 538毫秒
+[2018-12-17 15:22:19] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4,文件大小:8832K,耗时 702毫秒
+[2018-12-17 15:22:19] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 154477337607248866014ddcf423988077817ccb4e242.mp4,文件大小:1387K,耗时 532毫秒
+[2018-12-17 15:22:22] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:22:22] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:22:22] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:22:22] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:22:56] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 23036 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:22:56] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:22:56] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:23:06] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.232 seconds (JVM running for 12.935)
+[2018-12-17 15:23:07] [INFO]  [http-nio-8001-exec-6] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e242.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:23:07] [INFO]  [SimpleAsyncTaskExecutor-10] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e242.mp4
+[2018-12-17 15:23:07] [INFO]  [SimpleAsyncTaskExecutor-9] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:23:07] [INFO]  [SimpleAsyncTaskExecutor-8] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:23:07] [INFO]  [SimpleAsyncTaskExecutor-7] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:23:07] [INFO]  [SimpleAsyncTaskExecutor-10] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 154477337607248866014ddcf423988077817ccb4e242.mp4,文件大小:1387K,耗时 246毫秒
+[2018-12-17 15:23:07] [INFO]  [SimpleAsyncTaskExecutor-7] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg,文件大小:94K,耗时 226毫秒
+[2018-12-17 15:23:07] [INFO]  [SimpleAsyncTaskExecutor-8] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4,文件大小:1888K,耗时 248毫秒
+[2018-12-17 15:23:07] [INFO]  [SimpleAsyncTaskExecutor-9] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4,文件大小:8832K,耗时 481毫秒
+[2018-12-17 15:23:08] [INFO]  [SimpleAsyncTaskExecutor-8] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:23:08] [INFO]  [SimpleAsyncTaskExecutor-7] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:23:08] [INFO]  [SimpleAsyncTaskExecutor-10] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:23:08] [INFO]  [SimpleAsyncTaskExecutor-9] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:23:40] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 4296 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:23:40] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:23:40] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:23:53] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 13.126 seconds (JVM running for 14.828)
+[2018-12-17 15:23:53] [INFO]  [http-nio-8001-exec-8] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:23:53] [INFO]  [SimpleAsyncTaskExecutor-15] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:23:53] [INFO]  [SimpleAsyncTaskExecutor-14] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:23:53] [INFO]  [SimpleAsyncTaskExecutor-13] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:23:53] [INFO]  [SimpleAsyncTaskExecutor-12] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:23:53] [INFO]  [SimpleAsyncTaskExecutor-12] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg,文件大小:94K,耗时 269毫秒
+[2018-12-17 15:23:53] [RROR]  [SimpleAsyncTaskExecutor-15] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: 500 ,耗时376
+[2018-12-17 15:23:53] [INFO]  [SimpleAsyncTaskExecutor-13] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4,文件大小:1888K,耗时 584毫秒
+[2018-12-17 15:23:54] [INFO]  [SimpleAsyncTaskExecutor-14] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:135] : 
+		=>>> 下载完成  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4,文件大小:8832K,耗时 598毫秒
+[2018-12-17 15:23:54] [INFO]  [SimpleAsyncTaskExecutor-12] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:23:54] [INFO]  [SimpleAsyncTaskExecutor-13] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:23:54] [INFO]  [SimpleAsyncTaskExecutor-14] [cn.hnen.transmedia.util.FileDownHandler.doDownReport:262] : 
+		=>>> 发送报告>>>>  {"code":200,"message":"操作成功","result":null}
+[2018-12-17 15:26:02] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 14104 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:26:02] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:26:02] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:26:13] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 12.172 seconds (JVM running for 13.82)
+[2018-12-17 15:26:14] [INFO]  [http-nio-8001-exec-4] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:26:14] [INFO]  [SimpleAsyncTaskExecutor-19] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:26:14] [INFO]  [SimpleAsyncTaskExecutor-20] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:26:14] [INFO]  [SimpleAsyncTaskExecutor-19] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:68 ] : 
+		=>>> 文件已存在 文件名称:15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:26:14] [INFO]  [SimpleAsyncTaskExecutor-18] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:26:14] [INFO]  [SimpleAsyncTaskExecutor-18] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:68 ] : 
+		=>>> 文件已存在 文件名称:1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:26:14] [INFO]  [SimpleAsyncTaskExecutor-17] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:26:14] [INFO]  [SimpleAsyncTaskExecutor-17] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:68 ] : 
+		=>>> 文件已存在 文件名称:15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:27:44] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 2256 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:27:44] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:27:44] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:28:00] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 16.661 seconds (JVM running for 18.256)
+[2018-12-17 15:28:16] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 20484 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:28:16] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:28:16] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:28:22] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 7.113 seconds (JVM running for 8.909)
+[2018-12-17 15:28:33] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 10732 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:28:33] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:28:33] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:28:44] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 12.054 seconds (JVM running for 13.839)
+[2018-12-17 15:28:45] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:28:45] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:28:45] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:28:45] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:68 ] : 
+		=>>> 文件已存在 文件名称:1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:28:45] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:28:45] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:68 ] : 
+		=>>> 文件已存在 文件名称:15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:28:45] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:28:45] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:68 ] : 
+		=>>> 文件已存在 文件名称:15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:29:06] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 22384 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:29:06] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:29:06] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:29:17] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.269 seconds (JVM running for 12.968)
+[2018-12-17 15:29:17] [INFO]  [http-nio-8001-exec-3] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:29:17] [INFO]  [SimpleAsyncTaskExecutor-10] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:29:17] [INFO]  [SimpleAsyncTaskExecutor-9] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:29:17] [INFO]  [SimpleAsyncTaskExecutor-7] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:29:17] [INFO]  [SimpleAsyncTaskExecutor-8] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:30:12] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 10496 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:30:12] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:30:12] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:30:24] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 12.302 seconds (JVM running for 13.87)
+[2018-12-17 15:30:24] [INFO]  [http-nio-8001-exec-5] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:30:24] [INFO]  [SimpleAsyncTaskExecutor-15] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:30:24] [INFO]  [SimpleAsyncTaskExecutor-14] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:30:24] [INFO]  [SimpleAsyncTaskExecutor-13] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:30:24] [INFO]  [SimpleAsyncTaskExecutor-12] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:32:08] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 23844 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:32:08] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:32:08] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:32:20] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 12.637 seconds (JVM running for 14.285)
+[2018-12-17 15:32:31] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 1200 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:32:31] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:32:31] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:32:41] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.221 seconds (JVM running for 13.023)
+[2018-12-17 15:32:53] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 11908 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:32:53] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:32:53] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:33:04] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.837 seconds (JVM running for 13.932)
+[2018-12-17 15:33:04] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:33:04] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:33:04] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:33:04] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:33:04] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:41:28] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 1616 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:41:28] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:41:28] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:41:38] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.586 seconds (JVM running for 13.149)
+[2018-12-17 15:41:39] [INFO]  [http-nio-8001-exec-4] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:41:39] [INFO]  [SimpleAsyncTaskExecutor-7] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:41:39] [INFO]  [SimpleAsyncTaskExecutor-8] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:41:39] [INFO]  [SimpleAsyncTaskExecutor-9] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:41:39] [INFO]  [SimpleAsyncTaskExecutor-10] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:41:40] [RROR]  [SimpleAsyncTaskExecutor-7] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1008
+[2018-12-17 15:41:40] [RROR]  [SimpleAsyncTaskExecutor-10] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1168
+[2018-12-17 15:41:40] [RROR]  [SimpleAsyncTaskExecutor-8] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1176
+[2018-12-17 15:41:40] [RROR]  [SimpleAsyncTaskExecutor-9] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1177
+[2018-12-17 15:41:56] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 19820 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:41:56] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:41:56] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:42:06] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.214 seconds (JVM running for 12.829)
+[2018-12-17 15:42:07] [INFO]  [http-nio-8001-exec-2] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:42:07] [INFO]  [SimpleAsyncTaskExecutor-14] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:42:07] [INFO]  [SimpleAsyncTaskExecutor-15] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:42:07] [INFO]  [SimpleAsyncTaskExecutor-13] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:42:07] [INFO]  [SimpleAsyncTaskExecutor-12] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:42:08] [RROR]  [SimpleAsyncTaskExecutor-14] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1004
+[2018-12-17 15:42:08] [RROR]  [SimpleAsyncTaskExecutor-12] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1006
+[2018-12-17 15:42:08] [RROR]  [SimpleAsyncTaskExecutor-15] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1103
+[2018-12-17 15:42:08] [RROR]  [SimpleAsyncTaskExecutor-13] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1174
+[2018-12-17 15:43:12] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 5708 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:43:12] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:43:12] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:43:22] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.001 seconds (JVM running for 12.754)
+[2018-12-17 15:43:31] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 17184 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:43:31] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:43:31] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:43:42] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 12.103 seconds (JVM running for 13.871)
+[2018-12-17 15:43:43] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:43:43] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:43:43] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:43:43] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:43:43] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:43:44] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1112
+[2018-12-17 15:43:44] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1160
+[2018-12-17 15:43:44] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1293
+[2018-12-17 15:43:44] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1293
+[2018-12-17 15:48:20] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 5708 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:48:20] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:48:20] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:48:24] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 1604 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:48:24] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:48:24] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:48:35] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.826 seconds (JVM running for 13.424)
+[2018-12-17 15:50:24] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 19848 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:50:24] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:50:24] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:50:30] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 7.397 seconds (JVM running for 9.159)
+[2018-12-17 15:50:43] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 12508 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:50:43] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:50:43] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:50:55] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.929 seconds (JVM running for 13.539)
+[2018-12-17 15:50:55] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:50:55] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:50:55] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:50:55] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:50:55] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:50:57] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1113
+[2018-12-17 15:50:57] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1112
+[2018-12-17 15:50:57] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1180
+[2018-12-17 15:50:57] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1211
+[2018-12-17 15:54:06] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 3160 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:54:06] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:54:06] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:54:16] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.295 seconds (JVM running for 13.087)
+[2018-12-17 15:54:31] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 19884 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:54:31] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:54:31] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:54:41] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.165 seconds (JVM running for 12.841)
+[2018-12-17 15:54:42] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:54:42] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:54:42] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:54:42] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:54:42] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:54:43] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1111
+[2018-12-17 15:54:43] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1112
+[2018-12-17 15:54:43] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1112
+[2018-12-17 15:54:43] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1243
+[2018-12-17 15:57:09] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 15072 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:57:09] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:57:09] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:57:20] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 12.23 seconds (JVM running for 14.441)
+[2018-12-17 15:57:43] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 16932 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:57:43] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:57:43] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:57:54] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.187 seconds (JVM running for 12.887)
+[2018-12-17 15:58:09] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 22852 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:58:09] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:58:09] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:58:19] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.666 seconds (JVM running for 13.293)
+[2018-12-17 15:58:20] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:58:20] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:58:20] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:58:20] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:58:20] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:58:21] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1090
+[2018-12-17 15:58:21] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1103
+[2018-12-17 15:58:21] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1090
+[2018-12-17 15:58:21] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1131
+[2018-12-17 15:59:11] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 10376 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:59:11] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:59:11] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:59:21] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 14116 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 15:59:21] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 15:59:21] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 15:59:26] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 15.438 seconds (JVM running for 17.198)
+[2018-12-17 15:59:32] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 12.573 seconds (JVM running for 14.627)
+[2018-12-17 15:59:33] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 15:59:33] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 15:59:33] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 15:59:33] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 15:59:33] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 15:59:34] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1108
+[2018-12-17 15:59:34] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1122
+[2018-12-17 15:59:34] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1129
+[2018-12-17 15:59:34] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1183
+[2018-12-17 16:01:22] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 8952 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:01:22] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:01:22] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:01:33] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.466 seconds (JVM running for 13.228)
+[2018-12-17 16:01:42] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 20580 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:01:42] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:01:42] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:01:52] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.369 seconds (JVM running for 13.152)
+[2018-12-17 16:01:53] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:50 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:01:53] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:01:53] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:01:53] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:01:53] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:01:54] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1098
+[2018-12-17 16:01:54] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1097
+[2018-12-17 16:01:54] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1141
+[2018-12-17 16:01:54] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1141
+[2018-12-17 16:05:00] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 8308 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:05:00] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:05:00] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:05:10] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.198 seconds (JVM running for 12.933)
+[2018-12-17 16:05:21] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 9304 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:05:21] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:05:21] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:05:32] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.703 seconds (JVM running for 13.403)
+[2018-12-17 16:06:02] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:06:02] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:06:02] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:06:02] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:06:02] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:06:04] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1088
+[2018-12-17 16:06:04] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1088
+[2018-12-17 16:06:04] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1088
+[2018-12-17 16:06:04] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1088
+[2018-12-17 16:11:03] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 18376 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:11:03] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:11:03] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:11:15] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.81 seconds (JVM running for 13.502)
+[2018-12-17 16:11:25] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 12728 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:11:25] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:11:25] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:11:36] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.737 seconds (JVM running for 13.496)
+[2018-12-17 16:12:06] [INFO]  [http-nio-8001-exec-2] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:12:06] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:12:06] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:12:06] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:12:06] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:12:07] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1093
+[2018-12-17 16:12:07] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1093
+[2018-12-17 16:12:07] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1093
+[2018-12-17 16:12:07] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1093
+[2018-12-17 16:13:12] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 10808 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:13:12] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:13:12] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:13:23] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.46 seconds (JVM running for 13.259)
+[2018-12-17 16:13:33] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 6380 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:13:33] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:13:33] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:13:43] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.479 seconds (JVM running for 13.054)
+[2018-12-17 16:14:14] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:14:14] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:14:14] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:14:14] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:14:14] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:14:15] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1112
+[2018-12-17 16:14:15] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1112
+[2018-12-17 16:14:15] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1114
+[2018-12-17 16:14:15] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1112
+[2018-12-17 16:14:56] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 10492 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:14:56] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:14:56] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:15:07] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.243 seconds (JVM running for 13.255)
+[2018-12-17 16:15:19] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 23528 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:15:19] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:15:19] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:15:30] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.874 seconds (JVM running for 13.441)
+[2018-12-17 16:16:00] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:16:00] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:16:00] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:16:00] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:16:00] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:16:01] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1128
+[2018-12-17 16:16:01] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1127
+[2018-12-17 16:16:01] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1128
+[2018-12-17 16:16:01] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1127
+[2018-12-17 16:16:19] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 6472 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:16:19] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:16:19] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:16:30] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.4 seconds (JVM running for 13.172)
+[2018-12-17 16:16:41] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 23096 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:16:41] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:16:41] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:16:52] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.504 seconds (JVM running for 13.147)
+[2018-12-17 16:16:52] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:51 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:16:52] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:16:52] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:16:52] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:16:52] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:16:53] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1128
+[2018-12-17 16:16:53] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1135
+[2018-12-17 16:16:53] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1167
+[2018-12-17 16:16:53] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1176
+[2018-12-17 16:25:12] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 12152 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:25:12] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:25:12] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:25:28] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 680 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:25:28] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:25:28] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:25:33] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 21.722 seconds (JVM running for 24.193)
+[2018-12-17 16:25:37] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 9.918 seconds (JVM running for 12.701)
+[2018-12-17 16:25:58] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 12576 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:25:58] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:25:58] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:26:05] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 7.312 seconds (JVM running for 9.005)
+[2018-12-17 16:26:15] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 11412 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:26:15] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:26:15] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:26:25] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.111 seconds (JVM running for 12.711)
+[2018-12-17 16:26:56] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:26:56] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:26:56] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:26:56] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:26:56] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:26:59] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3131
+[2018-12-17 16:26:59] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3115
+[2018-12-17 16:26:59] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3118
+[2018-12-17 16:26:59] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3132
+[2018-12-17 16:27:20] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 18160 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:27:20] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:27:20] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:27:31] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.099 seconds (JVM running for 12.699)
+[2018-12-17 16:28:01] [INFO]  [http-nio-8001-exec-4] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:28:01] [INFO]  [SimpleAsyncTaskExecutor-8] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:28:01] [INFO]  [SimpleAsyncTaskExecutor-9] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:28:01] [INFO]  [SimpleAsyncTaskExecutor-7] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:28:01] [INFO]  [SimpleAsyncTaskExecutor-10] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:28:04] [RROR]  [SimpleAsyncTaskExecutor-10] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3013
+[2018-12-17 16:28:04] [RROR]  [SimpleAsyncTaskExecutor-8] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3015
+[2018-12-17 16:28:04] [RROR]  [SimpleAsyncTaskExecutor-9] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3015
+[2018-12-17 16:28:04] [RROR]  [SimpleAsyncTaskExecutor-7] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3017
+[2018-12-17 16:28:49] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 6776 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:28:50] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:28:50] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:29:00] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.36 seconds (JVM running for 12.938)
+[2018-12-17 16:29:30] [INFO]  [http-nio-8001-exec-5] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:29:30] [INFO]  [SimpleAsyncTaskExecutor-15] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:29:30] [INFO]  [SimpleAsyncTaskExecutor-13] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:29:30] [INFO]  [SimpleAsyncTaskExecutor-14] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:29:30] [INFO]  [SimpleAsyncTaskExecutor-12] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:29:33] [RROR]  [SimpleAsyncTaskExecutor-13] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3013
+[2018-12-17 16:29:33] [RROR]  [SimpleAsyncTaskExecutor-12] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3013
+[2018-12-17 16:29:33] [RROR]  [SimpleAsyncTaskExecutor-14] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3015
+[2018-12-17 16:29:33] [RROR]  [SimpleAsyncTaskExecutor-15] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3017
+[2018-12-17 16:30:52] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 8356 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:30:52] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:30:52] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:31:03] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.307 seconds (JVM running for 13.021)
+[2018-12-17 16:31:54] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 8356 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:31:54] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:31:54] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:31:59] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 12956 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:31:59] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:31:59] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:32:10] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.682 seconds (JVM running for 13.292)
+[2018-12-17 16:33:04] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 9664 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:33:04] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:33:04] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:33:10] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 7.265 seconds (JVM running for 9.012)
+[2018-12-17 16:33:23] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 14668 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:33:23] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:33:23] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:33:33] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.336 seconds (JVM running for 13.057)
+[2018-12-17 16:34:04] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:34:04] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:34:04] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:34:04] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:34:04] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:34:08] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4117
+[2018-12-17 16:34:08] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4118
+[2018-12-17 16:34:08] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4120
+[2018-12-17 16:34:08] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4118
+[2018-12-17 16:38:26] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 14868 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:38:26] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:38:26] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:38:37] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.307 seconds (JVM running for 13.055)
+[2018-12-17 16:38:57] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 16120 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:38:57] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:38:57] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:39:08] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.491 seconds (JVM running for 13.136)
+[2018-12-17 16:39:08] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:39:08] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:39:08] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:39:08] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:39:08] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:39:09] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1198
+[2018-12-17 16:39:09] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1127
+[2018-12-17 16:39:09] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1272
+[2018-12-17 16:39:09] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时1271
+[2018-12-17 16:39:52] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 19516 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:39:52] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:39:52] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:40:03] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.494 seconds (JVM running for 13.236)
+[2018-12-17 16:40:15] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 9808 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:40:15] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:40:15] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:40:30] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 15.487 seconds (JVM running for 18.744)
+[2018-12-17 16:40:31] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:40:31] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:40:31] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:40:31] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:40:31] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:40:35] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4167
+[2018-12-17 16:40:35] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4196
+[2018-12-17 16:40:35] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4176
+[2018-12-17 16:40:35] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4200
+[2018-12-17 16:40:58] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 20696 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:40:58] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:40:58] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:41:09] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.834 seconds (JVM running for 13.434)
+[2018-12-17 16:41:09] [INFO]  [http-nio-8001-exec-4] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:41:09] [INFO]  [SimpleAsyncTaskExecutor-10] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:41:09] [INFO]  [SimpleAsyncTaskExecutor-8] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:41:09] [INFO]  [SimpleAsyncTaskExecutor-9] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:41:09] [INFO]  [SimpleAsyncTaskExecutor-7] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:41:13] [RROR]  [SimpleAsyncTaskExecutor-9] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4016
+[2018-12-17 16:41:13] [RROR]  [SimpleAsyncTaskExecutor-10] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4017
+[2018-12-17 16:41:13] [RROR]  [SimpleAsyncTaskExecutor-8] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4016
+[2018-12-17 16:41:13] [RROR]  [SimpleAsyncTaskExecutor-7] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4137
+[2018-12-17 16:46:26] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 15708 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 16:46:26] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 16:46:26] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 16:46:37] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.586 seconds (JVM running for 13.494)
+[2018-12-17 16:46:37] [INFO]  [http-nio-8001-exec-3] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 16:46:37] [INFO]  [SimpleAsyncTaskExecutor-15] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 16:46:37] [INFO]  [SimpleAsyncTaskExecutor-14] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 16:46:37] [INFO]  [SimpleAsyncTaskExecutor-13] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 16:46:37] [INFO]  [SimpleAsyncTaskExecutor-12] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 16:46:41] [RROR]  [SimpleAsyncTaskExecutor-14] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4019
+[2018-12-17 16:46:41] [RROR]  [SimpleAsyncTaskExecutor-12] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4114
+[2018-12-17 16:46:41] [RROR]  [SimpleAsyncTaskExecutor-13] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4119
+[2018-12-17 16:46:41] [RROR]  [SimpleAsyncTaskExecutor-15] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时4231
+[2018-12-17 17:19:05] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 9272 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 17:19:05] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 17:19:05] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 17:19:17] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 12.351 seconds (JVM running for 14.316)
+[2018-12-17 17:19:30] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 9272 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 17:19:30] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 17:19:30] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 17:19:32] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 2.155 seconds (JVM running for 29.605)
+[2018-12-17 17:19:35] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 536 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 17:19:35] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 17:19:35] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 17:19:45] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 11.571 seconds (JVM running for 13.176)
+[2018-12-17 17:19:46] [INFO]  [http-nio-8001-exec-1] [cn.hnen.transmedia.controller.DistributeMediaController.receiveMedia:61 ] : 
+		=>>> [FileHostDownloadRole(id=1, fileName=15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=2, fileName=1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=3, fileName=15448189031659380605287fe42ea9dce867bc44af81a.mp4, cityId=null, beginPlayTime=null, sended=null), FileHostDownloadRole(id=4, fileName=154477337607248866014ddcf423988077817ccb4e240.mp4, cityId=null, beginPlayTime=null, sended=null)]
+[2018-12-17 17:19:46] [INFO]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg
+[2018-12-17 17:19:46] [INFO]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4
+[2018-12-17 17:19:46] [INFO]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 15448189031659380605287fe42ea9dce867bc44af81a.mp4
+[2018-12-17 17:19:46] [INFO]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:55 ] : 
+		=>>> 开始下载 154477337607248866014ddcf423988077817ccb4e240.mp4
+[2018-12-17 17:19:49] [RROR]  [SimpleAsyncTaskExecutor-2] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15447546433643a370b6081bc466c92a6dd5e3855431d.jpg, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3179
+[2018-12-17 17:19:49] [RROR]  [SimpleAsyncTaskExecutor-3] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3175
+[2018-12-17 17:19:49] [RROR]  [SimpleAsyncTaskExecutor-5] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 154477337607248866014ddcf423988077817ccb4e240.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3175
+[2018-12-17 17:19:49] [RROR]  [SimpleAsyncTaskExecutor-4] [cn.hnen.transmedia.util.FileDownHandler.receiveMedia:160] : 
+		=>>> 下载失败  文件名称: 15448189031659380605287fe42ea9dce867bc44af81a.mp4, 失败原因: I/O error on GET request for "http://127.0.0.1:8000/api/download/down": Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8000 [/127.0.0.1] failed: Connection refused: connect,耗时3328
+[2018-12-17 17:33:40] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 23648 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 17:33:40] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 17:33:40] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 17:34:19] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 20640 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 17:34:19] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 17:34:19] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 17:35:26] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 6844 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 17:35:26] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 17:35:26] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 17:36:26] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 11892 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-17 17:36:26] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-17 17:36:26] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-17 17:36:32] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 7.017 seconds (JVM running for 8.701)

@@ -31,7 +31,7 @@ public class ScheduleTask {
         System.out.println("This is a say method!"+new Date());
     }
 
-    @Scheduled(cron = "0/3 * * * * ?")
+//    @Scheduled(cron = "0/3 * * * * ?")
     public void deleteDownInfo() {
 
         Date date = new Date();//当前日期
@@ -41,7 +41,7 @@ public class ScheduleTask {
         calendar.add(Calendar.MONTH, -1);//月份减一
         Date preMonthDate = calendar.getTime();
 
-       downloadRepository.deleteOutDateRecord(JpaBusinessConfig.overDueDays);
+//       downloadRepository.deleteOutDateRecord(JpaBusinessConfig.overDueDays);
 
 
 

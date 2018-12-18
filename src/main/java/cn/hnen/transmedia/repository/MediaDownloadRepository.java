@@ -23,9 +23,9 @@ public interface MediaDownloadRepository extends JpaRepository<MediaDownloadInfo
 
 
 //    public Integer deleteByUpdataDateBefore(Date deleteBeforeDate);
-   @Modifying
-   @Transactional
-   @Query(value = "DELETE  FROM T_MEDIA_DOWNLOAD_INFO WHERE UPDATA_DATE < DATEADD(day,-overDueDays,GETDATE())", nativeQuery=true)
-   public void deleteOutDateRecord(@Param("overDueDays")String overDueDays);
+//   @Modifying
+//   @Transactional
+//   @Query(value = "DELETE  FROM T_MEDIA_DOWNLOAD_INFO WHERE UPDATA_DATE < DATEADD(day,-365,GETDATE())", nativeQuery=true)
+//   public void deleteOutDateRecord(@Param("overDueDays")String overDueDays);
 
 }
