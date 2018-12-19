@@ -11,6 +11,7 @@ import net.minidev.json.JSONUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -70,18 +71,11 @@ public class TransmediaApplicationTests {
 
 
         String result = restTemplate.postForObject("http://localhost:8000/api/distribute/receive", paramsMap, String.class);
-//
-//        ResponseEntity<String> response = restTemplate.exchange(FileDistributeConfig.downloadReportUrl, HttpMethod.POST, requestEntity, String.class);
 
-////        String result = restTemplate.postForObject(FileDistributeConfig.downloadApiPath, paramsMap, String.class);
-//
-//        HttpHeaders headers = new HttpHeaders();
-//        HttpEntity<MultiValueMap<String, String>> requestEntity = new HttpEntity<MultiValueMap<String, String>>(paramsMap, headers);
-//
-//        HttpEntity<String> formEntity = new HttpEntity<String>(jsonObj.toString(), headers);
-//        ResponseEntity<String> reportResult = restTemplate.postForEntity(FileDistributeConfig.downloadReportUrl, paramsMap,String.class);
 
         log.info("  测试  接收 返回 >>>>  "+result);
+
+
 
     }
 

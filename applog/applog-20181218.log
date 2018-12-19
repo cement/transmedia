@@ -70,3 +70,59 @@
 		=>>> No active profile set, falling back to default profiles: default
 [2018-12-18 10:02:42] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
 		=>>> Started TransmediaApplication in 11.2 seconds (JVM running for 13.068)
+[2018-12-18 10:53:45] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 1440 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-18 10:53:45] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-18 10:53:45] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-18 10:53:51] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 7.312 seconds (JVM running for 9.057)
+[2018-12-18 10:56:00] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 6060 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-18 10:56:00] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-18 10:56:00] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-18 10:56:10] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.197 seconds (JVM running for 12.908)
+[2018-12-18 10:58:57] [INFO]  [http-nio-8000-exec-1] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:310] : 
+		=>>> 设备端 开始下载 a.jpg
+[2018-12-18 10:58:58] [RROR]  [http-nio-8000-exec-1] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:329] : 
+		=>>> 设备端 下载失败！  文件名称: a.jpg;错误信息：文件不存在!
+[2018-12-18 10:59:47] [INFO]  [http-nio-8000-exec-4] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:310] : 
+		=>>> 设备端 开始下载 15448197696438666e3e76423461693572f7a5e4646bf.mp4
+[2018-12-18 10:59:47] [INFO]  [http-nio-8000-exec-4] [cn.hnen.transmedia.util.FileDownHandler.downLoadMedia:388] : 
+		=>>> 设备端 下载完成  文件名称: 15448197696438666e3e76423461693572f7a5e4646bf.mp4,文件大小:1164381,耗时 378毫秒
+[2018-12-18 11:01:48] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:50 ] : 
+		=>>> Starting DistributeMediaControllerTest on SC-201807251626 with PID 8568 (started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-18 11:01:48] [EBUG]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-18 11:01:48] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-18 11:01:58] [INFO]  [main] [cn.hnen.transmedia.controller.DistributeMediaControllerTest.logStarted:59 ] : 
+		=>>> Started DistributeMediaControllerTest in 12.376 seconds (JVM running for 14.182)
+[2018-12-18 17:14:03] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 2092 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-18 17:14:03] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-18 17:14:03] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-18 17:14:14] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.583 seconds (JVM running for 13.267)
+[2018-12-18 17:20:50] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 7808 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-18 17:20:50] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-18 17:20:50] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-18 17:21:00] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 11.033 seconds (JVM running for 12.717)
+[2018-12-18 17:31:50] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 10044 (F:\TransData\TransMediaTest\target\classes started by Administrator in F:\TransData\TransMediaTest)
+[2018-12-18 17:31:50] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2018-12-18 17:31:50] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2018-12-18 17:32:01] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 12.327 seconds (JVM running for 14.016)
