@@ -27,7 +27,7 @@ public class DistributeMediaService {
      * 异步下载多个文件
      * @param vos 文件实体集合
      */
-//    @Async
+//    @Async 此处可以异步也可同步，因为真正执行的方法是异步的
     public void receiveMediaListAsync(List<FileHostDownloadRole> vos) {
         for (int i = 0; i < vos.size(); i++) {
             downHandler.receiveMediaAsync(vos.get(i));

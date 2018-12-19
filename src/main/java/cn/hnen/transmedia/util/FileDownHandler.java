@@ -411,8 +411,7 @@ public class FileDownHandler {
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
-//            response.setHeader("Content-Disposition", "attachment; filename="+  new String(fileName.getBytes("utf-8"),"iso-8859-1"));
-//            e.printStackTrace();
+
         } finally {
 
             if (fileInStream != null) {
@@ -422,21 +421,7 @@ public class FileDownHandler {
                     e.printStackTrace();
                 }
             }
-//            if (fileOutStream != null) {
-//                try {
-//                    fileOutStream.close();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//
-//            if (requInStream != null) {
-//                try {
-//                    requInStream.close();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
+
             if (respOutStream != null) {
                 try {
                     respOutStream.close();

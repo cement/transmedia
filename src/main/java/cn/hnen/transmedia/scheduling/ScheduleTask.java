@@ -2,6 +2,8 @@ package cn.hnen.transmedia.scheduling;
 
 import cn.hnen.transmedia.Config.JpaBusinessConfig;
 import cn.hnen.transmedia.repository.MediaDownloadRepository;
+import cn.hutool.core.date.DateUnit;
+import cn.hutool.core.date.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -31,7 +33,7 @@ public class ScheduleTask {
         System.out.println("This is a say method!"+new Date());
     }
 
-//    @Scheduled(cron = "0/3 * * * * ?")
+    @Scheduled(cron = "0/5 * * * * ?")
     public void deleteDownInfo() {
 
         Date date = new Date();//当前日期
@@ -41,9 +43,7 @@ public class ScheduleTask {
         calendar.add(Calendar.MONTH, -1);//月份减一
         Date preMonthDate = calendar.getTime();
 
-//       downloadRepository.deleteOutDateRecord(JpaBusinessConfig.overDueDays);
-
-
-
+        System.out.println("===================================="+JpaBusinessConfig.overDueDays);
+      downloadRepository.deleteOutDateRecord(JpaBusinessConfig.overDueDays);
     }
 }

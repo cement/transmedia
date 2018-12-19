@@ -73,7 +73,5 @@ public class DistributeMediaControllerTest {
 
     }
 
-    @Test
-    public void reportDownInfo() {
-    }
+
 }
