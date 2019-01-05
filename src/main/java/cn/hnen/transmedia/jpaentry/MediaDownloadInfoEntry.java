@@ -30,7 +30,7 @@ public class MediaDownloadInfoEntry {
    @Column(name = "file_id")
    private Long fileId;
    // 要下发的文件名
-    @Column(name = "file_name")
+    @Column(name = "file_name",length = 1024)
     private String fileName;
 
     //在设备上开始播放的日期

@@ -2,15 +2,20 @@ package cn.hnen.transmedia;
 
 
 
+import cn.hnen.transmedia.entry.ResponseModel;
 import cn.hutool.http.HttpUtil;
 import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -23,12 +28,20 @@ import static cn.hnen.transmedia.Config.FileDistributeConfig.downloadBufferSize;
 public class Test {
 
 
-
+    public static RestTemplate restTemplate =  new RestTemplate();
     public static void main(String[] args) {
 
 
+        long start = System.currentTimeMillis();
+//        FileSystemResource resource = new FileSystemResource( Paths.get("D:\\advertfiles","c.mp4"));
+        MultiValueMap<String, Object> param = new LinkedMultiValueMap<>();
+        param.add("fileName", "c.mp4");
+        param.add("callback", 0);
+        ResponseModel model = restTemplate.postForObject("http://192.168.1.112:8008/api/replace/download", param, ResponseModel.class);
+        System.out.println(model);
+        long stop =System.currentTimeMillis();
 
-        testFileCreate();
+        System.out.println(stop-start);
 
     }
 

@@ -1,10 +1,9 @@
 package cn.hnen.transmedia.service;
 
 import cn.hnen.transmedia.entry.FileHostDownloadRole;
-import cn.hnen.transmedia.util.FileDownHandler;
+import cn.hnen.transmedia.util.MediaDownHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletResponse;
@@ -17,10 +16,10 @@ import java.util.List;
  */
 @Slf4j
 @Service
-public class DistributeMediaService {
+public class MediaDistributeService {
 
     @Autowired
-    public FileDownHandler downHandler;
+    public MediaDownHandler downHandler;
 
 
     /**

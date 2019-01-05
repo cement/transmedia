@@ -1,6 +1,6 @@
 package cn.hnen.transmedia.controller;
 
-import cn.hnen.transmedia.service.DistributeMediaService;
+import cn.hnen.transmedia.service.MediaDistributeService;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,11 +24,11 @@ import javax.servlet.http.HttpServletResponse;
 @Slf4j
 @Controller
 @RequestMapping("/api/download")
-public class DownLoadMediaController {
+public class MediaDownLoadController {
 
 
     @Autowired
-    private DistributeMediaService downloadMediaService;
+    private MediaDistributeService downloadMediaService;
 
 
     /**
@@ -36,7 +36,7 @@ public class DownLoadMediaController {
      * @param fileName
      * @param response
      */
-    @ApiOperation( value = "客户端文件下载")
+    @ApiOperation( value = "设备端文件下载", notes="设备端文件下载webapi接口" )
     @ApiImplicitParams(
             {
                     @ApiImplicitParam(name = "fileName", value = "文件名", required = true, dataType = "String", paramType = "query"),

@@ -9,13 +9,15 @@ log.app.file.level=INFO
 #spring框架log存储级别
 log.spring.file.level=WARN
 #控制台log打印级别
-log.console.level=INFO
+log.console.level=DEBUG
 
 #编码格式
 #spring.http.encoding.force=true
 #spring.http.encoding.charset=UTF-8
 #spring.http.encoding.enabled=true
-#server.tomcat.uri-encoding=UTF-8
+#server.tomcat.uri-encoding=UTF-8\
+
+server.t
 
 
 #数据库连接池配置
@@ -73,4 +75,10 @@ app.download.buffer.size=1024000
 
 #媒体下载重试次数,默认3次;
 app.download.retry.count=3
+
+#h2数据库记录过期时间,单位：天
+app.h2.record.overdue=30
+
+
+
 

@@ -2,8 +2,7 @@ package cn.hnen.transmedia.controller;
 
 
 import cn.hnen.transmedia.entry.FileHostDownloadRole;
-import cn.hnen.transmedia.entry.FileHostDownloadRoleVo;
-import cn.hnen.transmedia.service.DistributeMediaService;
+import cn.hnen.transmedia.service.MediaDistributeService;
 import com.alibaba.fastjson.JSONArray;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
@@ -24,11 +23,11 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/distribute")
 @Api(value="媒体文件分发",tags={"媒体文件分发 接口"})
-public class DistributeMediaController {
+public class MediaDistributeController {
 
 
     @Autowired
-    private DistributeMediaService downloadMediaService;
+    private MediaDistributeService downloadMediaService;
 
 
     /**

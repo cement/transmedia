@@ -33,7 +33,7 @@ import static cn.hnen.transmedia.Config.FileDistributeConfig.*;
  */
 @Slf4j
 @Component
-public class FileDownHandler {
+public class MediaDownHandler {
 
 
     @Autowired
@@ -90,7 +90,7 @@ public class FileDownHandler {
 
             ResponseEntity<Resource> respEntry = restTemplate.getForEntity(url, Resource.class);
 
-            if ( 200 != respEntry.getStatusCodeValue()){
+            if (200 != respEntry.getStatusCodeValue()) {
                 MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
                 downloadInfoEntry.setFileId(vo.getId());
                 downloadInfoEntry.setCityId(vo.getCityId());
@@ -328,7 +328,7 @@ public class FileDownHandler {
 
                 log.error("设备端 下载失败！  文件名称: {};错误信息：{}", downFile.getName(), "文件不存在!");
 
-                response.setStatus(500);
+                response.setStatus(501);
                 response.setContentType("application/json");
                 response.setCharacterEncoding("UTF-8");
                 DownResultModel downResultModel = new DownResultModel();
@@ -340,7 +340,7 @@ public class FileDownHandler {
                     e1.printStackTrace();
                 }
 
-//                return;
+
 //                requInStream = restTemplate.getForEntity(downloadApiPath + "?fileName=" + fileName, Resource.class).getBody().getInputStream();
 //                fileOutStream = new FileOutputStream(downFile);
 //                respOutStream = response.getOutputStream();
@@ -357,6 +357,21 @@ public class FileDownHandler {
 //                }
 //                respOutStream.flush();
 //                fileOutStream.flush();
+//                long stop = System.currentTimeMillis();
+//
+//                MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
+//
+//                downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+//
+//                downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
+//                downloadInfoEntry.setFileName(fileName);
+//                downloadInfoEntry.setDownloadType(DOWN_TYPE_ALL);
+//                downloadInfoEntry.setDescribe("设备端+本地 下载完成  文件名称: " + fileName);
+//                downloadInfoEntry.setDownLoadDuration(stop - start);
+//
+//                mediaDownRepository.save(downloadInfoEntry);
+//
+//                log.info("设备端+本地 下载完成  文件名称: {},文件大小:{},耗时 {}毫秒", fileName, downFile.length(), (stop - start));
 
             } else {
                 fileInStream = new FileInputStream(downFile);
@@ -376,7 +391,6 @@ public class FileDownHandler {
                 MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
 
                 downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
-
                 downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
                 downloadInfoEntry.setFileName(fileName);
                 downloadInfoEntry.setDownloadType(DOWN_TYPE_TO);
@@ -385,7 +399,7 @@ public class FileDownHandler {
 
                 mediaDownRepository.save(downloadInfoEntry);
 
-                log.info("设备端 下载完成  文件名称: {},文件大小:{},耗时 {}毫秒", fileName, downFile.length(),(stop - start));
+                log.info("设备端 下载完成  文件名称: {},文件大小:{},耗时 {}毫秒", fileName, downFile.length(), (stop - start));
             }
         } catch (Exception e) {
 
@@ -402,6 +416,7 @@ public class FileDownHandler {
 
             log.error("设备端 下载失败  文件名称: {};错误信息：{}", downloadMediaDir + fileName, e.getMessage() != null ? e.getMessage() : e.toString());
 
+            response.setStatus(500);
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
             DownResultModel downResultModel = new DownResultModel();
@@ -435,5 +450,19 @@ public class FileDownHandler {
 
     }
 
+
+    //**jdk**私有方法源码
+    public static long copy(InputStream source, OutputStream sink)
+            throws IOException
+    {
+        long nread = 0L;
+        byte[] buf = new byte[8192];
+        int n;
+        while ((n = source.read(buf)) > 0) {
+            sink.write(buf, 0, n);
+            nread += n;
+        }
+        return nread;
+    }
 
 }

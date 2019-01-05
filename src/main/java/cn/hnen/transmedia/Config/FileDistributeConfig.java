@@ -14,6 +14,7 @@ public class FileDistributeConfig {
 
     public static final String DOWN_TYPE_FROM = "from";
     public static final String DOWN_TYPE_TO= "to";
+    public static final String DOWN_TYPE_ALL= "from+to";
 
     public static final String DOWN_RESULT_SUCCESS ="success";
     public static final String DOWN_RESULT_FAILED = "failed";
@@ -59,6 +60,17 @@ public class FileDistributeConfig {
     public static int  downloadBufferSize;//复制文件缓冲区大小,单位:byte；
 
 
+    @Value("${app.upload.filekey}")
+    public  void setUploadFilekey(String uploadFilekey) {
+        FileDistributeConfig.uploadFilekey = uploadFilekey;
+    }
 
+    @Value("${app.download.filekey:fileName}")
+    public  void setDownloadFilekey(String downloadFilekey) {
+        FileDistributeConfig.downloadFilekey = downloadFilekey;
+    }
+
+    public static String uploadFilekey;
+    public static String downloadFilekey;
 
 }
