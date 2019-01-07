@@ -1,4 +1,4 @@
-package cn.hnen.transmedia.Config;
+package cn.hnen.transmedia.config;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.HttpRequestRetryHandler;

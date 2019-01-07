@@ -1,4 +1,4 @@
-package cn.hnen.transmedia.Config;
+package cn.hnen.transmedia.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +14,7 @@ public class FileDistributeConfig {
 
     public static final String DOWN_TYPE_FROM = "from";
     public static final String DOWN_TYPE_TO= "to";
-    public static final String DOWN_TYPE_ALL= "from+to";
+    public static final String DOWN_TYPE_REPLACE= "replace";
 
     public static final String DOWN_RESULT_SUCCESS ="success";
     public static final String DOWN_RESULT_FAILED = "failed";

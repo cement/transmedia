@@ -1,14 +1,14 @@
 package cn.hnen.transmedia.service;
 
-import cn.hnen.transmedia.Config.FileDistributeConfig;
+import cn.hnen.transmedia.config.FileDistributeConfig;
 import cn.hnen.transmedia.entry.ResponseModel;
+import cn.hnen.transmedia.repository.MediaTransRepository;
 import cn.hnen.transmedia.util.MediaReplaceHandler;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -22,7 +22,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import static cn.hnen.transmedia.entry.BusinessEnum.*;
-import static cn.hnen.transmedia.Config.FileDistributeConfig.downloadMediaDir;
+import static cn.hnen.transmedia.config.FileDistributeConfig.downloadMediaDir;
 
 /**
  * @author  YSH
@@ -38,6 +38,9 @@ public class MediaReplaceService {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Autowired
+    private MediaTransRepository mediaDownRepository;
+
     private static final  String api_root_path="http://192.168.1.112:8080/adback/";
     private static final  String api_download_path="api/adreplace/down";
     private static final String api_callback_path = "api/adreplace/callback";
@@ -49,6 +52,10 @@ public class MediaReplaceService {
 
 
     public  ResponseModel uploadMedia(MultipartFile file){
+
+        long start = System.currentTimeMillis();
+        log.info("开始上传: {}", file.getOriginalFilename());
+
         ResponseModel responseModel = new ResponseModel();
         String fileName = file.getOriginalFilename();
         Path path = Paths.get( downloadMediaDir,fileName);
@@ -66,10 +73,13 @@ public class MediaReplaceService {
         return responseModel;
     }
 
-    @Async
-    public  void uploadMediaAsync(MultipartFile file){
+    /*此处不能用同步，否则立即返回流断了无法上传*/
+//    @Async
+    public  ResponseModel uploadMediaReport(MultipartFile file){
         ResponseModel responseModel = uploadMedia(file);
         replaceMediaReport(responseModel);
+        log.info(">>>>>>>>> uploadMediaReport >>>>>>>>>>{}",responseModel);
+        return responseModel;
     }
 
 
@@ -87,6 +97,7 @@ public class MediaReplaceService {
 
     public ResponseModel downMedia(String fileName) {
 
+        log.info("开始下载: {}", fileName);
         ResponseModel responseModel = new ResponseModel();
         Path targetPath = Paths.get(downloadMediaDir, fileName);
         if (Files.exists(targetPath)) {
@@ -107,10 +118,13 @@ public class MediaReplaceService {
         return responseModel;
     }
 
-    @Async
-    public void downMediaAsync(String fileName) {
+    /*此处不需要异步步，这样调用端可以选择同步或异步。*/
+//   @Async
+    public ResponseModel downMediaReport(String fileName) {
         ResponseModel responseModel = downMedia(fileName);
         replaceMediaReport(responseModel);
+        log.info(">>>>>>>>>> downMediaReport >>>>>>>>>{}",responseModel);
+        return responseModel;
     }
 
 

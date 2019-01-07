@@ -1,31 +1,23 @@
 package cn.hnen.transmedia;
 
-import cn.hnen.transmedia.Config.FileDistributeConfig;
+import cn.hnen.transmedia.config.FileDistributeConfig;
 import cn.hnen.transmedia.entry.FileHostDownloadRoleVo;
-import cn.hnen.transmedia.jpaentry.MediaDownloadInfoEntry;
-import cn.hnen.transmedia.repository.MediaDownloadRepository;
-import cn.hutool.http.HttpUtil;
+import cn.hnen.transmedia.jpaentry.MediaTransInfoEntry;
+import cn.hnen.transmedia.repository.MediaTransRepository;
 import lombok.extern.slf4j.Slf4j;
 import net.minidev.json.JSONArray;
-import net.minidev.json.JSONUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Slf4j
 @RunWith(SpringRunner.class)
@@ -37,7 +29,7 @@ public class TransmediaApplicationTests {
     RestTemplate restTemplate;
 
     @Autowired
-    private MediaDownloadRepository mediaDownRepository;
+    private MediaTransRepository mediaDownRepository;
     @Test
     public void contextLoads() {
     }
@@ -106,7 +98,7 @@ public class TransmediaApplicationTests {
 
     @Test
     public void saveTest() {
-        MediaDownloadInfoEntry downloadInfoEntry= new MediaDownloadInfoEntry();
+        MediaTransInfoEntry downloadInfoEntry= new MediaTransInfoEntry();
         downloadInfoEntry.setFileId(33333333L);
         downloadInfoEntry.setDownLoadResult(FileDistributeConfig.DOWN_RESULT_SUCCESS);
         downloadInfoEntry.setDownloadType(FileDistributeConfig.DOWN_TYPE_FROM);

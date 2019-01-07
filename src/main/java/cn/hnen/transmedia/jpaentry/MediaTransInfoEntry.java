@@ -17,7 +17,7 @@ import java.util.Date;
 @Table(name = "T_MEDIA_DOWNLOAD_INFO")
 @EntityListeners(AuditingEntityListener.class)
 @Data
-public class MediaDownloadInfoEntry {
+public class MediaTransInfoEntry {
 
     @Id
     @Column(name = "id")

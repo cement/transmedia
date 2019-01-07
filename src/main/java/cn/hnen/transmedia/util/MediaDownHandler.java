@@ -1,13 +1,13 @@
 package cn.hnen.transmedia.util;
 
-import cn.hnen.transmedia.Config.FileDistributeConfig;
+import cn.hnen.transmedia.config.FileDistributeConfig;
 import cn.hnen.transmedia.entry.DownResultModel;
 import cn.hnen.transmedia.entry.FileHostDownloadRole;
 import cn.hnen.transmedia.entry.ReciveResultModel;
 import cn.hnen.transmedia.entry.FileHostDownloadRoleVo;
 import cn.hnen.transmedia.exception.MediaDownloadException;
-import cn.hnen.transmedia.jpaentry.MediaDownloadInfoEntry;
-import cn.hnen.transmedia.repository.MediaDownloadRepository;
+import cn.hnen.transmedia.jpaentry.MediaTransInfoEntry;
+import cn.hnen.transmedia.repository.MediaTransRepository;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
-import static cn.hnen.transmedia.Config.FileDistributeConfig.*;
+import static cn.hnen.transmedia.config.FileDistributeConfig.*;
 
 /**
  * @author YSH
@@ -40,7 +40,7 @@ public class MediaDownHandler {
     public RestTemplate restTemplate;
 
     @Autowired
-    private MediaDownloadRepository mediaDownRepository;
+    private MediaTransRepository mediaDownRepository;
 
 
     /**
@@ -68,7 +68,7 @@ public class MediaDownHandler {
                     log.info("文件已存在 文件名称:{}", targetFile.getName());
 
 
-                    MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
+                    MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
                     downloadInfoEntry.setFileId(vo.getId());
                     downloadInfoEntry.setCityId(vo.getCityId());
                     downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
@@ -91,7 +91,7 @@ public class MediaDownHandler {
             ResponseEntity<Resource> respEntry = restTemplate.getForEntity(url, Resource.class);
 
             if (200 != respEntry.getStatusCodeValue()) {
-                MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
+                MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
                 downloadInfoEntry.setFileId(vo.getId());
                 downloadInfoEntry.setCityId(vo.getCityId());
                 downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
@@ -120,7 +120,7 @@ public class MediaDownHandler {
 
             long stop = System.currentTimeMillis();
 
-            MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
+            MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
             downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
@@ -143,7 +143,7 @@ public class MediaDownHandler {
             resultModel.getFailedList().add(targetFile.getName());
             long stop = System.currentTimeMillis();
 
-            MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
+            MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
             downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
@@ -316,7 +316,7 @@ public class MediaDownHandler {
             File downFile = new File(downloadMediaDir, fileName);
             if (!downFile.exists()) {
                 long stop = System.currentTimeMillis();
-                MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
+                MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
 
                 downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
                 downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);
@@ -359,7 +359,7 @@ public class MediaDownHandler {
 //                fileOutStream.flush();
 //                long stop = System.currentTimeMillis();
 //
-//                MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
+//                MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
 //
 //                downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
 //
@@ -388,7 +388,7 @@ public class MediaDownHandler {
 
                 long stop = System.currentTimeMillis();
 
-                MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
+                MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
 
                 downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
                 downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
@@ -404,7 +404,7 @@ public class MediaDownHandler {
         } catch (Exception e) {
 
             long stop = System.currentTimeMillis();
-            MediaDownloadInfoEntry downloadInfoEntry = new MediaDownloadInfoEntry();
+            MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
 
             downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
             downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);

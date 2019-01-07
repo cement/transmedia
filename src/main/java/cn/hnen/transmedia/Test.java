@@ -3,9 +3,6 @@ package cn.hnen.transmedia;
 
 
 import cn.hnen.transmedia.entry.ResponseModel;
-import cn.hutool.http.HttpUtil;
-import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -15,14 +12,9 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Paths;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 
-import static cn.hnen.transmedia.Config.FileDistributeConfig.downloadApiPath;
-import static cn.hnen.transmedia.Config.FileDistributeConfig.downloadBufferSize;
+import static cn.hnen.transmedia.config.FileDistributeConfig.downloadApiPath;
+import static cn.hnen.transmedia.config.FileDistributeConfig.downloadBufferSize;
 
 
 public class Test {

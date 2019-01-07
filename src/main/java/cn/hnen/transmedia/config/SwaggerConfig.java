@@ -1,12 +1,8 @@
-package cn.hnen.transmedia.Config;
+package cn.hnen.transmedia.config;
 
 
-import ch.qos.logback.core.status.StatusUtil;
-import javafx.animation.Animation;
-import jdk.net.SocketFlow;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMethod;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -18,8 +14,6 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-import javax.net.ssl.SSLEngineResult;
-import javax.transaction.Status;
 import java.util.ArrayList;
 import java.util.List;
 

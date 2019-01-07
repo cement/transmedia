@@ -1,6 +1,5 @@
 package cn.hnen.transmedia.util;
 
-import cn.hnen.transmedia.repository.MediaDownloadRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -10,7 +9,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import static cn.hnen.transmedia.Config.FileDistributeConfig.downloadMediaDir;
+import static cn.hnen.transmedia.config.FileDistributeConfig.downloadMediaDir;
 @Component
 public class MediaReplaceHandler {
 

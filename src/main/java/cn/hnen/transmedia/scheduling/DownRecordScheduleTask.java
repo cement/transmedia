@@ -1,16 +1,12 @@
 package cn.hnen.transmedia.scheduling;
 
-import cn.hnen.transmedia.Config.JpaBusinessConfig;
-import cn.hnen.transmedia.repository.MediaDownloadRepository;
-import cn.hutool.core.date.DateUnit;
-import cn.hutool.core.date.DateUtil;
+import cn.hnen.transmedia.config.JpaBusinessConfig;
+import cn.hnen.transmedia.repository.MediaTransRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 
@@ -25,7 +21,7 @@ public class DownRecordScheduleTask {
     @Autowired
     private RestTemplate restTemplate;
     @Autowired
-    private MediaDownloadRepository downloadRepository;
+    private MediaTransRepository downloadRepository;
 
 
 //    @Scheduled(cron = "0/3 * * * * ?")
