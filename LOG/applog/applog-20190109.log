@@ -1,0 +1,160 @@
+[2019-01-09 11:15:45] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 11020 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-09 11:15:45] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-09 11:15:45] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-09 11:15:58] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 14.129 seconds (JVM running for 16.902)
+[2019-01-09 11:18:52] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 开始上传: a.jpg
+[2019-01-09 11:18:52] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:70 ] : 
+		=>>> 下载完成  文件名称: a.jpg,文件大小:94K,耗时 11毫秒
+[2019-01-09 11:18:52] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:98 ] : 
+		=>>> 结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=a.jpg)
+[2019-01-09 11:18:52] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:86 ] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=a.jpg)
+[2019-01-09 11:18:52] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 开始上传: b.jpg
+[2019-01-09 11:18:52] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:70 ] : 
+		=>>> 下载完成  文件名称: b.jpg,文件大小:159K,耗时 0毫秒
+[2019-01-09 11:18:52] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:98 ] : 
+		=>>> 结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=b.jpg)
+[2019-01-09 11:18:52] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:86 ] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=b.jpg)
+[2019-01-09 11:23:21] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 6120 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-09 11:23:21] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-09 11:23:21] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-09 11:23:34] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 14.056 seconds (JVM running for 16.763)
+[2019-01-09 11:40:31] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 8216 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-09 11:40:31] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-09 11:40:31] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-09 11:40:44] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 14.173 seconds (JVM running for 16.908)
+[2019-01-09 11:44:44] [INFO]  [http-nio-8008-exec-7] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:59 ] : 
+		=>>> 替换上传 开始: d.jpg
+[2019-01-09 11:44:44] [INFO]  [http-nio-8008-exec-7] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:86 ] : 
+		=>>> 替换上传 完成  文件名称: d.jpg,文件大小:36K,耗时 0毫秒
+[2019-01-09 11:44:45] [INFO]  [http-nio-8008-exec-7] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:138] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=d.jpg)
+[2019-01-09 11:44:45] [INFO]  [http-nio-8008-exec-7] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:126] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=d.jpg)
+[2019-01-09 11:50:01] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:146] : 
+		=>>> 替换下载 开始， 文件名 a.jpg
+[2019-01-09 11:50:01] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:154] : 
+		=>>> 替换下载 文件已存在,文件名：a.jpg
+[2019-01-09 11:50:01] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:138] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-09 11:50:01] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.downMediaReport:213] : 
+		=>>> >>>>>>>>>> downMediaReport >>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-09 11:52:39] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 1028 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-09 11:52:39] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-09 11:52:39] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-09 11:52:55] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 16.049 seconds (JVM running for 19.081)
+[2019-01-09 11:53:47] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 9308 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-09 11:53:47] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-09 11:53:47] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-09 11:54:00] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 14.628 seconds (JVM running for 17.45)
+[2019-01-09 11:55:34] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:59 ] : 
+		=>>> 替换上传 开始: a.jpg
+[2019-01-09 11:55:34] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:67 ] : 
+		=>>> 替换上传 文件已存在,文件名：a.jpg
+[2019-01-09 11:55:35] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:138] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-09 11:55:35] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:126] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-09 11:56:50] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:59 ] : 
+		=>>> 替换上传 开始: d.jpg
+[2019-01-09 11:56:50] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:59 ] : 
+		=>>> 替换上传 开始: b.jpg
+[2019-01-09 11:56:50] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:86 ] : 
+		=>>> 替换上传 完成  文件名称: d.jpg,文件大小:36K,耗时 16毫秒
+[2019-01-09 11:56:50] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:86 ] : 
+		=>>> 替换上传 完成  文件名称: b.jpg,文件大小:159K,耗时 0毫秒
+[2019-01-09 11:56:50] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:138] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=d.jpg)
+[2019-01-09 11:56:50] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:126] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=d.jpg)
+[2019-01-09 11:56:50] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:138] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=b.jpg)
+[2019-01-09 11:56:50] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:126] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=b.jpg)
+[2019-01-09 11:57:55] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:59 ] : 
+		=>>> 替换上传 开始: d.jpg
+[2019-01-09 11:57:55] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:67 ] : 
+		=>>> 替换上传 文件已存在,文件名：d.jpg
+[2019-01-09 11:57:55] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:59 ] : 
+		=>>> 替换上传 开始: b.jpg
+[2019-01-09 11:57:55] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:67 ] : 
+		=>>> 替换上传 文件已存在,文件名：b.jpg
+[2019-01-09 11:57:55] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:138] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=d.jpg)
+[2019-01-09 11:57:55] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:126] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=d.jpg)
+[2019-01-09 11:57:55] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:138] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-09 11:57:55] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:126] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-09 12:01:57] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 7764 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-09 12:01:57] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-09 12:01:57] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-09 12:02:11] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 14.754 seconds (JVM running for 17.637)
+[2019-01-09 12:02:33] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:59 ] : 
+		=>>> 替换上传 开始: b.jpg
+[2019-01-09 12:02:33] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:59 ] : 
+		=>>> 替换上传 开始: d.jpg
+[2019-01-09 12:02:33] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:67 ] : 
+		=>>> 替换上传 文件已存在,文件名：b.jpg
+[2019-01-09 12:02:33] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:67 ] : 
+		=>>> 替换上传 文件已存在,文件名：d.jpg
+[2019-01-09 12:02:33] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:140] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=d.jpg)
+[2019-01-09 12:02:33] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:140] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-09 12:02:33] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:128] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=d.jpg)
+[2019-01-09 12:02:33] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:128] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-09 12:03:38] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:148] : 
+		=>>> 替换下载 开始， 文件名 a.jpg
+[2019-01-09 12:03:38] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:178] : 
+		=>>> 替换下载 完成  文件名称: a.jpg,文件大小:94K,耗时 44毫秒
+[2019-01-09 12:03:38] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:140] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=a.jpg)
+[2019-01-09 12:03:38] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.downMediaReport:217] : 
+		=>>> >>>>>>>>>> downMediaReport >>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=a.jpg)
+[2019-01-09 12:04:02] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:148] : 
+		=>>> 替换下载 开始， 文件名 a.jpg
+[2019-01-09 12:04:02] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:156] : 
+		=>>> 替换下载 文件已存在,文件名：a.jpg
+[2019-01-09 12:04:02] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:140] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-09 12:04:02] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.downMediaReport:217] : 
+		=>>> >>>>>>>>>> downMediaReport >>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-09 13:56:31] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 7360 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-09 13:56:31] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-09 13:56:31] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-09 13:56:47] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 17.431 seconds (JVM running for 21.164)

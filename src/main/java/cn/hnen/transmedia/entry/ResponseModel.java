@@ -85,7 +85,7 @@ public class ResponseModel{
 
 
     public static ResponseModel warp(BusinessEnum adEnum){
-        ResponseModel model = new ResponseModel(adEnum.code,adEnum.message);
+        ResponseModel model = new ResponseModel(adEnum.code,adEnum.cname);
         model.setName(adEnum.name()).setDetail(adEnum.detail);
        return model;
     }
