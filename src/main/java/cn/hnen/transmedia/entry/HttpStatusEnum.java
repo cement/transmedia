@@ -152,7 +152,7 @@ public enum HttpStatusEnum {
     }
 
     public String toString() {
-        return this.value + " " + this.name();
+        return this.value + " " + this.name()+" "+this.reasonPhrase+" "+this.chinesePhrase;
     }
 
     public static HttpStatusEnum valueOf(int statusCode) {
@@ -212,13 +212,13 @@ public enum HttpStatusEnum {
         @Nullable
         public static HttpStatusEnum.Series resolve(int statusCode) {
             int seriesCode = statusCode / 100;
-            HttpStatusEnum.Series[] var2 = values();
-            int var3 = var2.length;
+            HttpStatusEnum.Series[] series = Series.values();
+            int length = series.length;
 
-            for(int var4 = 0; var4 < var3; ++var4) {
-                HttpStatusEnum.Series series = var2[var4];
-                if (series.value == seriesCode) {
-                    return series;
+            for(int i = 0; i < length; ++i) {
+                HttpStatusEnum.Series serie = series[i];
+                if (serie.value == seriesCode) {
+                    return serie;
                 }
             }
 

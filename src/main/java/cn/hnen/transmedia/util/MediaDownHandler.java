@@ -1,10 +1,10 @@
 package cn.hnen.transmedia.util;
 
-import cn.hnen.transmedia.config.FileDistributeConfig;
+import cn.hnen.transmedia.config.MediaDistributeConfig;
 import cn.hnen.transmedia.entry.DownResultModel;
 import cn.hnen.transmedia.entry.FileHostDownloadRole;
-import cn.hnen.transmedia.entry.ReciveResultModel;
 import cn.hnen.transmedia.entry.FileHostDownloadRoleVo;
+import cn.hnen.transmedia.entry.ReciveResultModel;
 import cn.hnen.transmedia.exception.MediaDownloadException;
 import cn.hnen.transmedia.jpaentry.MediaTransInfoEntry;
 import cn.hnen.transmedia.repository.MediaTransRepository;
@@ -18,13 +18,15 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
-import static cn.hnen.transmedia.config.FileDistributeConfig.*;
+import static cn.hnen.transmedia.config.MediaDistributeConfig.*;
+import static cn.hnen.transmedia.jpaentry.MediaTransInfoEntry.*;
 
 /**
  * @author YSH
@@ -55,19 +57,19 @@ public class MediaDownHandler {
         log.info("开始下载 {}", vo.getFileName());
 
         ReciveResultModel resultModel = new ReciveResultModel();
+
         FileOutputStream outputStream = null;
         InputStream inputStream = null;
 
-        String fileName = vo.getFileName();
-        File targetFile = new File(downloadMediaDir, fileName);
+        File targetFile = new File(downloadMediaDir, vo.getFileName());
 
         try {
             if (targetFile.exists()) {
                 if (targetFile.length() > 0) {
-                    resultModel.getExistedList().add(targetFile.getName());
-                    log.info("文件已存在 文件名称:{}", targetFile.getName());
+                    /*记录日志*/
+                    log.info("文件已存在 文件名称:{}", vo.getFileName());
 
-
+                    /*保存到数据库*/
                     MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
                     downloadInfoEntry.setFileId(vo.getId());
                     downloadInfoEntry.setCityId(vo.getCityId());
@@ -79,18 +81,23 @@ public class MediaDownHandler {
                     downloadInfoEntry.setDescribe("文件已存在!");
                     mediaDownRepository.save(downloadInfoEntry);
 
-                    resultModel.setResultCode(0);
+                    /*返回*/
+                    resultModel.setResultCode(1);
+                    resultModel.getExistedList().add(targetFile.getName());
+                    /*汇报结果*/
+                    this.doDownReport(vo);
 
                     return resultModel;
                 }
             }
 
-            String url = downloadApiPath + "?fileName=" + fileName;
-
-
+            String url = downloadApiPath + "?fileName=" + vo.getFileName();
             ResponseEntity<Resource> respEntry = restTemplate.getForEntity(url, Resource.class);
 
             if (200 != respEntry.getStatusCodeValue()) {
+                /*记录日志*/
+                log.error("上级文件不存在 文件名称:{}", vo.getFileName());
+                /*保存到数据库*/
                 MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
                 downloadInfoEntry.setFileId(vo.getId());
                 downloadInfoEntry.setCityId(vo.getCityId());
@@ -101,14 +108,14 @@ public class MediaDownHandler {
                 downloadInfoEntry.setBeginPlayTime(vo.getBeginPlayTime());
                 downloadInfoEntry.setDescribe("上级文件不存在!");
                 mediaDownRepository.save(downloadInfoEntry);
-                log.info("上级文件不存在 文件名称:{}", targetFile.getName());
+                /*返回值*/
                 resultModel.setResultCode(-1);
+                resultModel.getFailedList().add(vo.getFileName());
 
                 return resultModel;
             }
 
             inputStream = respEntry.getBody().getInputStream();
-
             outputStream = new FileOutputStream(targetFile);
 
             byte[] buf = new byte[downloadBufferSize];
@@ -119,7 +126,10 @@ public class MediaDownHandler {
             outputStream.flush();
 
             long stop = System.currentTimeMillis();
+            /*记录日志*/
+            log.info("下载完成  文件名称: {},文件大小:{}K,耗时 {}毫秒", vo.getFileName(), targetFile.length() / 1024, (stop - start));
 
+            /*保存到数据库*/
             MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
@@ -130,19 +140,21 @@ public class MediaDownHandler {
             downloadInfoEntry.setBeginPlayTime(vo.getBeginPlayTime());
             downloadInfoEntry.setDownLoadDuration(stop - start);
             downloadInfoEntry.setDescribe("文件大小:" + targetFile.length() / 1024 + "K,耗时: " + (stop - start) + "毫秒");
-
             mediaDownRepository.save(downloadInfoEntry);
-            log.info("下载完成  文件名称: {},文件大小:{}K,耗时 {}毫秒", targetFile.getName(), targetFile.length() / 1024, (stop - start));
 
-
-            resultModel.getDownedList().add(targetFile.getName());
-
-            this.doDownReport(vo.getId());
+           /*汇报结果*/
+            this.doDownReport(vo);
+           /*返回值*/
+            resultModel.setResultCode(0);
+            resultModel.getDownedList().add(vo.getFileName());
 
         } catch (Exception e) {
-            resultModel.getFailedList().add(targetFile.getName());
-            long stop = System.currentTimeMillis();
 
+            long stop = System.currentTimeMillis();
+            /*记录日志*/
+            log.error("下载失败  文件名称: {}, 失败原因: {},耗时{}", vo.getFileName(), e.getMessage(), stop - start);
+
+            /*保存到数据库*/
             MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
@@ -156,10 +168,11 @@ public class MediaDownHandler {
 
             mediaDownRepository.save(downloadInfoEntry);
 
-
-            log.error("下载失败  文件名称: {}, 失败原因: {},耗时{}", targetFile.getName(), e.getMessage(), stop - start);
+            /*返回*/
+            resultModel.setResultCode(-2);
+            resultModel.getFailedList().add(vo.getFileName());
             //e.printStackTrace();
-            //throw new MediaDownloadException(1, resultModel);
+
         } finally {
             if (inputStream != null) {
                 try {
@@ -179,54 +192,9 @@ public class MediaDownHandler {
         return resultModel;
     }
 
-    /**
-     * 使用 Spring内置方法下载，它的缓冲较小，4096，传输大文件 时影响速度。
-     *
-     * @param vo
-     * @return
-     */
-    public ReciveResultModel springDownMedia(FileHostDownloadRoleVo vo) {
-
-        long start = System.currentTimeMillis();
-        log.info("开始下载 {}", vo.getFileName());
-
-        ReciveResultModel downModel = new ReciveResultModel();
-
-        String fileName = vo.getFileName();
-        File targetFile = new File(downloadMediaDir, fileName);
-
-        if (targetFile.exists() && targetFile.length() > 0) {
-            log.info("文件已存在 {}", fileName);
-            downModel.getExistedList().add(fileName);
-            return downModel;
-        }
-        try {
-
-            String url = downloadApiPath + "?fileName=" + fileName;
-            InputStream inputStream = restTemplate.getForEntity(url, Resource.class).getBody().getInputStream();
-            OutputStream outputStream = new FileOutputStream(targetFile);
-//            FileCopyUtils.BUFFER_SIZE = 1024000;
-            int byteCount = FileCopyUtils.copy(inputStream, outputStream);
-
-            long stop = System.currentTimeMillis();
-            downModel.getDownedList().add(fileName);
-            log.info("下载完成  文件名称: {},文件大小:{}K,耗时 {}毫秒", fileName, byteCount / 1024, (stop - start));
-
-            downModel.getDownedList().add(fileName);
-        } catch (IOException e) {
-            long stop = System.currentTimeMillis();
-            log.info("下载失败  文件名称: {}, 失败原因: {},耗时{}", targetFile.getName(), e.getMessage(), stop - start);
-            downModel.getFailedList().add(fileName);
-            //e.printStackTrace();
-            throw new MediaDownloadException(1, downModel);
-        }
-        return downModel;
-    }
-
 
     /**
      * 异步下载
-     *
      * @param vo
      */
     @Async
@@ -237,65 +205,53 @@ public class MediaDownHandler {
 
     /**
      * 从上级服务器下载情况汇报
-     *
-     * @param id
+     * @param vo 文件实体
      */
-    public void doDownReport(Long id) {
+    public void doDownReport(FileHostDownloadRole vo) {
 
-        MultiValueMap<String, Object> paramsMap = new LinkedMultiValueMap<String, Object>();
-        paramsMap.add("id", id);
-        ResponseEntity<String> reportResult = restTemplate.postForEntity(FileDistributeConfig.downloadReportUrl, paramsMap, String.class);
-        String result = reportResult.getBody();
+        try {
+            MultiValueMap<String, Object> paramsMap = new LinkedMultiValueMap<String, Object>();
+            paramsMap.add("id", vo.getId());
+            ResponseEntity<String> reportResult = restTemplate.postForEntity(MediaDistributeConfig.downloadReportUrl, paramsMap, String.class);
+            String result = reportResult.getBody();
 //        HashMap<String, Object> paramsMap = new HashMap<>();
 //        paramsMap.put("id", id);
 //        String post = HttpUtil.post(FileDistributeConfig.downloadReportUrl, paramsMap);
-        log.info("发送报告>>>>  " + result);
+            /*记录日志*/
+            log.info("下载文件 汇报成功, 文件名称:{},返回信息:{}", vo.getFileName(),result);
+            /*保存到本地数据库*/
+            MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
+            downloadInfoEntry.setFileId(vo.getId());
+            downloadInfoEntry.setCityId(vo.getCityId());
+            downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+            downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
+            downloadInfoEntry.setDownloadType(DOWN_TYPE_REPORT);
+            downloadInfoEntry.setFileName(vo.getFileName());
+            downloadInfoEntry.setBeginPlayTime(vo.getBeginPlayTime());
+            downloadInfoEntry.setDescribe("下载文件 汇报失败!!");
+            mediaDownRepository.save(downloadInfoEntry);
 
-    }
+        } catch (RestClientException e) {
+            /*记录日志*/
+            log.error("下载文件 汇报失败, 文件名称:{}", vo.getFileName());
 
-    /**
-     * 设备端下载
-     *
-     * @param fileName
-     * @param response
-     */
-    public void downLoadMedia2(String fileName, HttpServletResponse response) {
-
-
-        FileInputStream fileInStream = null;
-        ServletOutputStream respOutStream = null;
-        try {
-            File downFile = new File(FileDistributeConfig.downloadMediaDir, fileName);
-            fileInStream = new FileInputStream(downFile);
-            respOutStream = response.getOutputStream();
-
-            byte[] buffer = new byte[FileDistributeConfig.downloadBufferSize];
-            int readed = 0;
-            while ((readed = fileInStream.read(buffer)) != -1) {
-                respOutStream.write(buffer, 0, readed);
-            }
-        } catch (IOException e) {
+            /*保存到本地数据库*/
+            MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
+            downloadInfoEntry.setFileId(vo.getId());
+            downloadInfoEntry.setCityId(vo.getCityId());
+            downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+            downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);
+            downloadInfoEntry.setDownloadType(DOWN_TYPE_REPORT);
+            downloadInfoEntry.setFileName(vo.getFileName());
+            downloadInfoEntry.setBeginPlayTime(vo.getBeginPlayTime());
+            downloadInfoEntry.setDescribe("下载文件 汇报失败!!");
+            mediaDownRepository.save(downloadInfoEntry);
+            /*打印错误堆栈*/
             e.printStackTrace();
-        } finally {
-            if (fileInStream != null) {
-                try {
-                    fileInStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            if (respOutStream != null) {
-                try {
-                    respOutStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-            }
         }
 
     }
+
 
     /**
      * 设备端下载
@@ -379,7 +335,7 @@ public class MediaDownHandler {
                 response.setContentType("application/octet-stream");
                 response.setHeader("Content-Disposition", "attachment; filename=" + new String(fileName.getBytes("utf-8"), "iso-8859-1"));
 
-                byte[] buffer = new byte[FileDistributeConfig.downloadBufferSize];
+                byte[] buffer = new byte[MediaDistributeConfig.downloadBufferSize];
                 int readed = 0;
                 while ((readed = fileInStream.read(buffer)) != -1) {
                     respOutStream.write(buffer, 0, readed);

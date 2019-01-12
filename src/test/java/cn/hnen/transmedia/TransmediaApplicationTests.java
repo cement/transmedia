@@ -1,6 +1,6 @@
 package cn.hnen.transmedia;
 
-import cn.hnen.transmedia.config.FileDistributeConfig;
+import cn.hnen.transmedia.config.MediaDistributeConfig;
 import cn.hnen.transmedia.entry.FileHostDownloadRoleVo;
 import cn.hnen.transmedia.jpaentry.MediaTransInfoEntry;
 import cn.hnen.transmedia.repository.MediaTransRepository;
@@ -17,6 +17,8 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
+import java.util.Base64;
+import java.util.HashMap;
 import java.util.List;
 
 @Slf4j
@@ -79,7 +81,7 @@ public class TransmediaApplicationTests {
         MultiValueMap<String, String> paramsMap= new LinkedMultiValueMap<String, String>();
         paramsMap.add("id","000006");
 
-        String result = restTemplate.postForObject(FileDistributeConfig.downloadReportUrl, paramsMap, String.class);
+        String result = restTemplate.postForObject(MediaDistributeConfig.downloadReportUrl, paramsMap, String.class);
 
 
 //        HttpHeaders headers = new HttpHeaders();
@@ -100,11 +102,14 @@ public class TransmediaApplicationTests {
     public void saveTest() {
         MediaTransInfoEntry downloadInfoEntry= new MediaTransInfoEntry();
         downloadInfoEntry.setFileId(33333333L);
-        downloadInfoEntry.setDownLoadResult(FileDistributeConfig.DOWN_RESULT_SUCCESS);
-        downloadInfoEntry.setDownloadType(FileDistributeConfig.DOWN_TYPE_FROM);
+        downloadInfoEntry.setDownLoadResult(MediaTransInfoEntry.DOWN_RESULT_SUCCESS);
+        downloadInfoEntry.setDownloadType(MediaTransInfoEntry.DOWN_TYPE_FROM);
         downloadInfoEntry.setFileName("dcq.txt");
         downloadInfoEntry.setBeginPlayTime(null);
         mediaDownRepository.save(downloadInfoEntry);
+        HashMap<Object, Object> objectObjectHashMap = new HashMap<>();
+
+
     }
 
 }

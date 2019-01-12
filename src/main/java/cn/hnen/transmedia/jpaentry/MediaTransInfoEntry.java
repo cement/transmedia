@@ -19,6 +19,17 @@ import java.util.Date;
 @Data
 public class MediaTransInfoEntry {
 
+
+ public static final String DOWN_TYPE_FROM = "from";
+ public static final String DOWN_TYPE_TO= "to";
+ public static final String DOWN_TYPE_REPLACE= "replace";
+ public static final String DOWN_TYPE_REPORT= "report";
+
+ public static final String DOWN_RESULT_SUCCESS ="success";
+ public static final String DOWN_RESULT_FAILED = "failed";
+ public static final String DOWN_RESULT_EXIST= "existed";
+ public static final String DOWN_RESULT_UNEXIST= "unexisted";
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy=GenerationType.IDENTITY)

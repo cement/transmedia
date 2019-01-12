@@ -29,7 +29,9 @@ public class MediaDistributeService {
 //    @Async 此处可以异步也可同步，因为真正执行的方法是异步的
     public void receiveMediaListAsync(List<FileHostDownloadRole> vos) {
         for (int i = 0; i < vos.size(); i++) {
-            downHandler.receiveMediaAsync(vos.get(i));
+            //20190112 改同步:
+//            downHandler.receiveMediaAsync(vos.get(i));
+            downHandler.receiveMedia(vos.get(i));
         }
 
     }

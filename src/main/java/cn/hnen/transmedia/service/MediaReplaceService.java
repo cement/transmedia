@@ -1,6 +1,6 @@
 package cn.hnen.transmedia.service;
 
-import cn.hnen.transmedia.config.FileDistributeConfig;
+import cn.hnen.transmedia.config.MediaDistributeConfig;
 import cn.hnen.transmedia.entry.ResponseModel;
 import cn.hnen.transmedia.jpaentry.MediaTransInfoEntry;
 import cn.hnen.transmedia.repository.MediaTransRepository;
@@ -22,8 +22,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import static cn.hnen.transmedia.config.FileDistributeConfig.*;
+import static cn.hnen.transmedia.config.MediaDistributeConfig.downloadMediaDir;
+import static cn.hnen.transmedia.config.MediaDistributeConfig.replaceDownloadApi;
+import static cn.hnen.transmedia.config.MediaDistributeConfig.replaceDownloadReportApi;
 import static cn.hnen.transmedia.entry.BusinessEnum.*;
+import static cn.hnen.transmedia.jpaentry.MediaTransInfoEntry.*;
 
 /**
  * @author  YSH
@@ -43,16 +46,6 @@ public class MediaReplaceService {
     @Autowired
     private MediaTransRepository mediaDownRepository;
 
-    private static final  String api_root_path="http://192.168.1.112:8080/adback/";
-    private static final  String api_download_path="api/adreplace/down";
-    private static final String api_callback_path = "api/adreplace/callback";
-    private static final String api_callback_url = api_root_path+api_callback_path;
-    private static final String api_download_url= api_root_path+api_download_path;
-
-
-
-
-
     public  ResponseModel uploadMedia(MultipartFile file){
 
         long start = System.currentTimeMillis();
@@ -61,6 +54,7 @@ public class MediaReplaceService {
         ResponseModel responseModel = new ResponseModel();
         String fileName = file.getOriginalFilename();
         Path path = Paths.get( downloadMediaDir,fileName);
+        log.info("文件位置:{}",path);
         if (Files.exists(path)){
             long stop = System.currentTimeMillis();
            /*记录日志*/
@@ -69,7 +63,7 @@ public class MediaReplaceService {
             /*记录到数据库*/
             MediaTransInfoEntry transInfo = new MediaTransInfoEntry();
                 transInfo.setDownloadMediaDir(downloadMediaDir);
-                transInfo.setDownLoadResult("文件已存在");
+                transInfo.setDownLoadResult(DOWN_RESULT_EXIST);
                 transInfo.setFileName(fileName);
                 transInfo.setDownloadType(DOWN_TYPE_REPLACE);
                 transInfo.setDownLoadDuration(stop - start);
@@ -88,7 +82,7 @@ public class MediaReplaceService {
                 /*记录到数据库*/
                 MediaTransInfoEntry transInfo = new MediaTransInfoEntry();
                     transInfo.setDownloadMediaDir(downloadMediaDir);
-                    transInfo.setDownLoadResult("替换上传 完成");
+                    transInfo.setDownLoadResult(DOWN_RESULT_SUCCESS);
                     transInfo.setFileName(fileName);
                     transInfo.setDownloadType(DOWN_TYPE_REPLACE);
                     transInfo.setDownLoadDuration(stop - start);
@@ -106,7 +100,7 @@ public class MediaReplaceService {
                 /*记录到数据库*/
                 MediaTransInfoEntry transInfo = new MediaTransInfoEntry();
                     transInfo.setDownloadMediaDir(downloadMediaDir);
-                    transInfo.setDownLoadResult("替换上传 失败");
+                    transInfo.setDownLoadResult(DOWN_RESULT_FAILED);
                     transInfo.setFileName(fileName);
                     transInfo.setDownloadType(DOWN_TYPE_REPLACE);
                     transInfo.setDownLoadDuration(stop - start);
@@ -136,7 +130,7 @@ public class MediaReplaceService {
     public void replaceMediaReport(ResponseModel model){
         MultiValueMap<String, Object> param = new LinkedMultiValueMap<>();
         param.add("report",  JSON.toJSONString(model));
-        ResponseModel responseModel = restTemplate.postForObject(api_callback_url, param, ResponseModel.class);
+        ResponseModel responseModel = restTemplate.postForObject(replaceDownloadReportApi, param, ResponseModel.class);
         log.info("替换分发  结果汇报返回：>>>>{}",responseModel);
     }
 
@@ -149,6 +143,7 @@ public class MediaReplaceService {
 
         ResponseModel responseModel = new ResponseModel();
         Path targetPath = Paths.get(downloadMediaDir, fileName);
+        log.info("文件位置:{}",targetPath);
         if (Files.exists(targetPath)) {
 
             long stop = System.currentTimeMillis();
@@ -157,7 +152,7 @@ public class MediaReplaceService {
             /*记录到数据库*/
             MediaTransInfoEntry transInfo = new MediaTransInfoEntry();
                 transInfo.setDownloadMediaDir(downloadMediaDir);
-                transInfo.setDownLoadResult("替换下载 文件已存在");
+                transInfo.setDownLoadResult(DOWN_RESULT_EXIST);
                 transInfo.setFileName(fileName);
                 transInfo.setDownloadType(DOWN_TYPE_REPLACE);
                 transInfo.setDownLoadDuration(stop - start);
@@ -168,8 +163,8 @@ public class MediaReplaceService {
         }else{
             try {
                 MultiValueMap paramsMap = new LinkedMultiValueMap();
-                paramsMap.add(FileDistributeConfig.downloadFilekey,fileName);
-                ResponseEntity<Resource>  respEntity = restTemplate.postForEntity(api_download_url, paramsMap,Resource.class);
+                paramsMap.add(MediaDistributeConfig.downloadFilekey,fileName);
+                ResponseEntity<Resource>  respEntity = restTemplate.postForEntity(replaceDownloadApi, paramsMap,Resource.class);
                 InputStream inputStream = respEntity.getBody().getInputStream();
                 long size = Files.copy(inputStream, targetPath);
 
@@ -179,7 +174,7 @@ public class MediaReplaceService {
                 /*记录到数据库*/
                 MediaTransInfoEntry transInfo = new MediaTransInfoEntry();
                     transInfo.setDownloadMediaDir(downloadMediaDir);
-                    transInfo.setDownLoadResult("替换下载 完成");
+                    transInfo.setDownLoadResult(DOWN_RESULT_SUCCESS);
                     transInfo.setFileName(fileName);
                     transInfo.setDownloadType(DOWN_TYPE_REPLACE);
                     transInfo.setDownLoadDuration(stop - start);
@@ -195,7 +190,7 @@ public class MediaReplaceService {
                 /*记录到数据库*/
                 MediaTransInfoEntry transInfo = new MediaTransInfoEntry();
                 transInfo.setDownloadMediaDir(downloadMediaDir);
-                transInfo.setDownLoadResult("替换下载 完成");
+                transInfo.setDownLoadResult(DOWN_RESULT_FAILED);
                 transInfo.setFileName(fileName);
                 transInfo.setDownloadType(DOWN_TYPE_REPLACE);
                 transInfo.setDownLoadDuration(stop - start);

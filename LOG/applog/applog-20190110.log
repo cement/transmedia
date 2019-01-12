@@ -1,0 +1,192 @@
+[2019-01-10 09:51:39] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 9800 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-10 09:51:39] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-10 09:51:39] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-10 09:52:00] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 22.858 seconds (JVM running for 25.862)
+[2019-01-10 09:53:52] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 12784 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-10 09:53:52] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-10 09:53:52] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-10 09:54:13] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 22.268 seconds (JVM running for 24.298)
+[2019-01-10 10:55:41] [INFO]  [http-nio-8008-exec-1] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: a.jpg
+[2019-01-10 10:55:41] [INFO]  [http-nio-8008-exec-1] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\a.jpg
+[2019-01-10 10:55:41] [INFO]  [http-nio-8008-exec-1] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：a.jpg
+[2019-01-10 10:55:41] [INFO]  [http-nio-8008-exec-1] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 10:55:41] [INFO]  [http-nio-8008-exec-1] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 10:55:53] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: a.jpg
+[2019-01-10 10:55:53] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\a.jpg
+[2019-01-10 10:55:53] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：a.jpg
+[2019-01-10 10:55:53] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 10:55:53] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 10:55:53] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: b.jpg
+[2019-01-10 10:55:53] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\b.jpg
+[2019-01-10 10:55:53] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：b.jpg
+[2019-01-10 10:55:53] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-10 10:55:53] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-10 10:56:25] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: a.jpg
+[2019-01-10 10:56:25] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\a.jpg
+[2019-01-10 10:56:25] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:81 ] : 
+		=>>> 替换上传 完成  文件名称: a.jpg,文件大小:94K,耗时 7毫秒
+[2019-01-10 10:56:25] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=a.jpg)
+[2019-01-10 10:56:25] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=a.jpg)
+[2019-01-10 10:56:25] [INFO]  [http-nio-8008-exec-5] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: b.jpg
+[2019-01-10 10:56:25] [INFO]  [http-nio-8008-exec-5] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\b.jpg
+[2019-01-10 10:56:25] [INFO]  [http-nio-8008-exec-5] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:81 ] : 
+		=>>> 替换上传 完成  文件名称: b.jpg,文件大小:159K,耗时 0毫秒
+[2019-01-10 10:56:25] [INFO]  [http-nio-8008-exec-5] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=b.jpg)
+[2019-01-10 10:56:25] [INFO]  [http-nio-8008-exec-5] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=b.jpg)
+[2019-01-10 10:56:29] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: a.jpg
+[2019-01-10 10:56:29] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\a.jpg
+[2019-01-10 10:56:29] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：a.jpg
+[2019-01-10 10:56:29] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 10:56:29] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 10:56:29] [INFO]  [http-nio-8008-exec-7] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: b.jpg
+[2019-01-10 10:56:29] [INFO]  [http-nio-8008-exec-7] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\b.jpg
+[2019-01-10 10:56:29] [INFO]  [http-nio-8008-exec-7] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：b.jpg
+[2019-01-10 10:56:29] [INFO]  [http-nio-8008-exec-7] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-10 10:56:29] [INFO]  [http-nio-8008-exec-7] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-10 11:01:17] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 12784 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-10 11:01:17] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-10 11:01:17] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-10 11:01:29] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 12.089 seconds (JVM running for 4060.832)
+[2019-01-10 11:11:28] [INFO]  [http-nio-8008-exec-1] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: a.jpg
+[2019-01-10 11:11:28] [INFO]  [http-nio-8008-exec-1] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\a.jpg
+[2019-01-10 11:11:28] [INFO]  [http-nio-8008-exec-1] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：a.jpg
+[2019-01-10 11:11:28] [INFO]  [http-nio-8008-exec-1] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 11:11:28] [INFO]  [http-nio-8008-exec-1] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 11:11:28] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: b.jpg
+[2019-01-10 11:11:28] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\b.jpg
+[2019-01-10 11:11:28] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：b.jpg
+[2019-01-10 11:11:28] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-10 11:11:28] [INFO]  [http-nio-8008-exec-2] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-10 11:11:35] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: a.jpg
+[2019-01-10 11:11:35] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\a.jpg
+[2019-01-10 11:11:35] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：a.jpg
+[2019-01-10 11:11:35] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 11:11:35] [INFO]  [http-nio-8008-exec-3] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 11:11:35] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: b.jpg
+[2019-01-10 11:11:35] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\b.jpg
+[2019-01-10 11:11:35] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：b.jpg
+[2019-01-10 11:11:35] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-10 11:11:35] [INFO]  [http-nio-8008-exec-4] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-10 11:11:38] [INFO]  [http-nio-8008-exec-5] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: a.jpg
+[2019-01-10 11:11:38] [INFO]  [http-nio-8008-exec-5] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\a.jpg
+[2019-01-10 11:11:38] [INFO]  [http-nio-8008-exec-5] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：a.jpg
+[2019-01-10 11:11:38] [INFO]  [http-nio-8008-exec-5] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 11:11:38] [INFO]  [http-nio-8008-exec-5] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=a.jpg)
+[2019-01-10 11:11:38] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:52 ] : 
+		=>>> 替换上传 开始: b.jpg
+[2019-01-10 11:11:38] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:57 ] : 
+		=>>> 文件位置:d:\advertfiles2\b.jpg
+[2019-01-10 11:11:38] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMedia:61 ] : 
+		=>>> 替换上传 文件已存在,文件名：b.jpg
+[2019-01-10 11:11:38] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-10 11:11:38] [INFO]  [http-nio-8008-exec-6] [cn.hnen.transmedia.service.MediaReplaceService.uploadMediaReport:122] : 
+		=>>> >>>>>>>>> uploadMediaReport >>>>>>>>>>ResponseModel(code=1, name=EXISTED, message=文件已存在, detail=null, data=b.jpg)
+[2019-01-10 11:52:21] [INFO]  [http-nio-8008-exec-8] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:142] : 
+		=>>> 替换下载 开始， 文件名 c.mp4
+[2019-01-10 11:52:21] [INFO]  [http-nio-8008-exec-8] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:146] : 
+		=>>> 文件位置:d:\advertfiles2\c.mp4
+[2019-01-10 11:52:28] [INFO]  [http-nio-8008-exec-8] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:173] : 
+		=>>> 替换下载 完成  文件名称: c.mp4,文件大小:177324K,耗时 7184毫秒
+[2019-01-10 11:52:28] [INFO]  [http-nio-8008-exec-8] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=c.mp4)
+[2019-01-10 11:52:28] [INFO]  [http-nio-8008-exec-8] [cn.hnen.transmedia.service.MediaReplaceService.downMediaReport:212] : 
+		=>>> >>>>>>>>>> downMediaReport >>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=c.mp4)
+[2019-01-10 11:53:01] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:142] : 
+		=>>> 替换下载 开始， 文件名 d.jpg
+[2019-01-10 11:53:01] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:146] : 
+		=>>> 文件位置:d:\advertfiles2\d.jpg
+[2019-01-10 11:53:01] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:173] : 
+		=>>> 替换下载 完成  文件名称: d.jpg,文件大小:36K,耗时 20毫秒
+[2019-01-10 11:53:01] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=d.jpg)
+[2019-01-10 11:53:01] [INFO]  [http-nio-8008-exec-9] [cn.hnen.transmedia.service.MediaReplaceService.downMediaReport:212] : 
+		=>>> >>>>>>>>>> downMediaReport >>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=d.jpg)
+[2019-01-10 11:53:02] [INFO]  [http-nio-8008-exec-10] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:142] : 
+		=>>> 替换下载 开始， 文件名 f.mp4
+[2019-01-10 11:53:02] [INFO]  [http-nio-8008-exec-10] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:146] : 
+		=>>> 文件位置:d:\advertfiles2\f.mp4
+[2019-01-10 11:53:10] [INFO]  [http-nio-8008-exec-10] [cn.hnen.transmedia.service.MediaReplaceService.downMedia:173] : 
+		=>>> 替换下载 完成  文件名称: f.mp4,文件大小:181106K,耗时 8140毫秒
+[2019-01-10 11:53:10] [INFO]  [http-nio-8008-exec-10] [cn.hnen.transmedia.service.MediaReplaceService.replaceMediaReport:134] : 
+		=>>> 替换分发  结果汇报返回：>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=f.mp4)
+[2019-01-10 11:53:10] [INFO]  [http-nio-8008-exec-10] [cn.hnen.transmedia.service.MediaReplaceService.downMediaReport:212] : 
+		=>>> >>>>>>>>>> downMediaReport >>>>>>>>>ResponseModel(code=2, name=SUCCESS, message=成功, detail=null, data=f.mp4)
+[2019-01-10 16:05:31] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:50 ] : 
+		=>>> Starting TransmediaApplication on SC-201807251626 with PID 9572 (F:\TransData\TransMediaNew\target\classes started by Administrator in F:\TransData\TransMediaNew)
+[2019-01-10 16:05:31] [EBUG]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarting:53 ] : 
+		=>>> Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+[2019-01-10 16:05:31] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStartupProfileInfo:675] : 
+		=>>> No active profile set, falling back to default profiles: default
+[2019-01-10 16:05:56] [INFO]  [restartedMain] [cn.hnen.transmedia.TransmediaApplication.logStarted:59 ] : 
+		=>>> Started TransmediaApplication in 26.205 seconds (JVM running for 29.193)
