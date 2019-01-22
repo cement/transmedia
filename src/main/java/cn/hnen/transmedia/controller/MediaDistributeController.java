@@ -38,17 +38,12 @@ public class MediaDistributeController {
     public MediaDownHandler downHandler;
 
     /**
-     *  @desc  请求—>根据路径多线程下载->成功向服务器汇报
+     *  @desc  请求—>根据路径启动一个线程下载->成功向服务器汇报(原来采用启动多线程下载，测试 发现有异常)
      * @param paramsJson  参数json ,有文件名，文件id等信息，请参考FileHostDownloadRole实体类
      * @return
      */
-    @ApiOperation( value = "媒体文件接收")
-    @ApiImplicitParams(
-            {
-                    @ApiImplicitParam(name = "data", value = "json", required = true, dataType = "java.lang.String", paramType = "query"),
-            }
-    )
-    @RequestMapping("/receive")
+    @ApiOperation( value = "媒体文件接收",notes = "媒体文件接收api接口")
+    @RequestMapping(value = "/receive",method = {RequestMethod.GET,RequestMethod.POST})
     public String receiveMedia(@RequestParam("data") String paramsJson){
         List<FileHostDownloadRole> fileHostDownloadRoles = JSONArray.parseArray(paramsJson, FileHostDownloadRole.class);
         log.info("{}",fileHostDownloadRoles);
@@ -56,35 +51,15 @@ public class MediaDistributeController {
         return "接收成功！";
     }
 
-    @RequestMapping("/receive2")
-    public ResponseEntity<ResponseModel> receiveMedia2(@RequestParam("data") String paramsJson){
+//    @ApiOperation( value = "媒体文件接收",notes = "媒体文件接收api接口", hidden = true)
+//    @RequestMapping(value = "/receive2",method = {RequestMethod.GET,RequestMethod.POST})
+//    public ResponseEntity<ResponseModel> receiveMedia2(@RequestParam("data") String paramsJson){
+//
+//        ResponseModel model = new ResponseModel();
+//        List<FileHostDownloadRole> fileVos = JSONArray.parseArray(paramsJson, FileHostDownloadRole.class);
+//        List<ReciveResultModel> resultList = fileVos.parallelStream().map(fileVo -> downHandler.receiveMedia(fileVo)).collect(Collectors.toList());
+//        model.setCode(1).setMessage("下载完成！").setData(resultList);
+//       return ResponseEntity.ok(model);
+//    }
 
-        ResponseModel model = new ResponseModel();
-        List<FileHostDownloadRole> fileVos = JSONArray.parseArray(paramsJson, FileHostDownloadRole.class);
-        List<ReciveResultModel> resultList = fileVos.parallelStream().map(fileVo -> downHandler.receiveMedia(fileVo)).collect(Collectors.toList());
-        model.setCode(1).setMessage("下载完成！").setData(resultList);
-       return ResponseEntity.ok(model);
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-    /**
-     * 测试 报告下载信息
-     * @param
-     * @returnid
-     */
-    @RequestMapping("report")
-    public String  reportDownInfo(@RequestParam("id") String id){
-        log.info(">RequestMapping>>>>> id :"+id);
-        return id;
-    }
 }

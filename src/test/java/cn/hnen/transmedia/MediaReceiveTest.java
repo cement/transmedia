@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -15,7 +14,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import static cn.hnen.transmedia.config.MediaDistributeConfig.downloadBufferSize;
-import static cn.hnen.transmedia.config.MediaDistributeConfig.downloadMediaDir;
+import static cn.hnen.transmedia.config.MediaDistributeConfig.mediaRootDir;
 
 @Slf4j
 @Component
@@ -33,7 +32,7 @@ public class MediaReceiveTest {
         FileOutputStream outputStream = null;
         InputStream inputStream = null;
 
-        File targetFile = new File(downloadMediaDir, fileName);
+        File targetFile = new File(mediaRootDir, fileName);
 
         try {
             if (targetFile.exists()) {

@@ -61,7 +61,7 @@ public class MediaDownHandler {
         FileOutputStream outputStream = null;
         InputStream inputStream = null;
 
-        File targetFile = new File(downloadMediaDir, vo.getFileName());
+        File targetFile = new File(mediaRootDir, vo.getFileName());
 
         try {
             if (targetFile.exists()) {
@@ -73,7 +73,7 @@ public class MediaDownHandler {
                     MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
                     downloadInfoEntry.setFileId(vo.getId());
                     downloadInfoEntry.setCityId(vo.getCityId());
-                    downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+                    downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
                     downloadInfoEntry.setDownLoadResult(DOWN_RESULT_EXIST);
                     downloadInfoEntry.setDownloadType(DOWN_TYPE_FROM);
                     downloadInfoEntry.setFileName(vo.getFileName());
@@ -101,7 +101,7 @@ public class MediaDownHandler {
                 MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
                 downloadInfoEntry.setFileId(vo.getId());
                 downloadInfoEntry.setCityId(vo.getCityId());
-                downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+                downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
                 downloadInfoEntry.setDownLoadResult(DOWN_RESULT_UNEXIST);
                 downloadInfoEntry.setDownloadType(DOWN_TYPE_FROM);
                 downloadInfoEntry.setFileName(vo.getFileName());
@@ -133,7 +133,7 @@ public class MediaDownHandler {
             MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
-            downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+            downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
             downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
             downloadInfoEntry.setFileName(vo.getFileName());
             downloadInfoEntry.setDownloadType(DOWN_TYPE_FROM);
@@ -158,7 +158,7 @@ public class MediaDownHandler {
             MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
-            downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+            downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
             downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);
             downloadInfoEntry.setFileName(vo.getFileName());
             downloadInfoEntry.setDownloadType(DOWN_TYPE_FROM);
@@ -223,7 +223,7 @@ public class MediaDownHandler {
             MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
-            downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+            downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
             downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
             downloadInfoEntry.setDownloadType(DOWN_TYPE_REPORT);
             downloadInfoEntry.setFileName(vo.getFileName());
@@ -239,7 +239,7 @@ public class MediaDownHandler {
             MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
-            downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+            downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
             downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);
             downloadInfoEntry.setDownloadType(DOWN_TYPE_REPORT);
             downloadInfoEntry.setFileName(vo.getFileName());
@@ -269,12 +269,12 @@ public class MediaDownHandler {
 //        FileOutputStream fileOutStream = null;
         ServletOutputStream respOutStream = null;
         try {
-            File downFile = new File(downloadMediaDir, fileName);
+            File downFile = new File(mediaRootDir, fileName);
             if (!downFile.exists()) {
                 long stop = System.currentTimeMillis();
-                MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
 
-                downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+                MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
+                downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
                 downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);
                 downloadInfoEntry.setFileName(fileName);
                 downloadInfoEntry.setDownloadType(DOWN_TYPE_TO);
@@ -296,39 +296,6 @@ public class MediaDownHandler {
                     e1.printStackTrace();
                 }
 
-
-//                requInStream = restTemplate.getForEntity(downloadApiPath + "?fileName=" + fileName, Resource.class).getBody().getInputStream();
-//                fileOutStream = new FileOutputStream(downFile);
-//                respOutStream = response.getOutputStream();
-//
-//
-//                response.setContentType("application/octet-stream");
-//                response.setHeader("Content-Disposition", "attachment; filename="+  new String(fileName.getBytes("utf-8"),"iso-8859-1"));
-//
-//                byte[] buffer = new byte[downloadBufferSize];
-//                int readed = 0;
-//                while ((readed = requInStream.read(buffer)) != -1) {
-//                    fileOutStream.write(buffer, 0, readed);
-//                    respOutStream.write(buffer, 0, readed);
-//                }
-//                respOutStream.flush();
-//                fileOutStream.flush();
-//                long stop = System.currentTimeMillis();
-//
-//                MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
-//
-//                downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
-//
-//                downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
-//                downloadInfoEntry.setFileName(fileName);
-//                downloadInfoEntry.setDownloadType(DOWN_TYPE_ALL);
-//                downloadInfoEntry.setDescribe("设备端+本地 下载完成  文件名称: " + fileName);
-//                downloadInfoEntry.setDownLoadDuration(stop - start);
-//
-//                mediaDownRepository.save(downloadInfoEntry);
-//
-//                log.info("设备端+本地 下载完成  文件名称: {},文件大小:{},耗时 {}毫秒", fileName, downFile.length(), (stop - start));
-
             } else {
                 fileInStream = new FileInputStream(downFile);
                 respOutStream = response.getOutputStream();
@@ -346,7 +313,7 @@ public class MediaDownHandler {
 
                 MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
 
-                downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+                downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
                 downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
                 downloadInfoEntry.setFileName(fileName);
                 downloadInfoEntry.setDownloadType(DOWN_TYPE_TO);
@@ -362,7 +329,7 @@ public class MediaDownHandler {
             long stop = System.currentTimeMillis();
             MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
 
-            downloadInfoEntry.setDownloadMediaDir(downloadMediaDir);
+            downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
             downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);
             downloadInfoEntry.setFileName(fileName);
             downloadInfoEntry.setDownloadType(DOWN_TYPE_TO);
@@ -370,14 +337,15 @@ public class MediaDownHandler {
             downloadInfoEntry.setDownLoadDuration(stop - start);
             mediaDownRepository.save(downloadInfoEntry);
 
-            log.error("设备端 下载失败  文件名称: {};错误信息：{}", downloadMediaDir + fileName, e.getMessage() != null ? e.getMessage() : e.toString());
+            log.error("设备端 下载失败  文件名称: {};错误信息：{}", mediaRootDir + fileName, e.getMessage() != null ? e.getMessage() : e.toString());
 
-            response.setStatus(500);
-            response.setContentType("application/json");
-            response.setCharacterEncoding("UTF-8");
-            DownResultModel downResultModel = new DownResultModel();
-            downResultModel.setCode(-1).setMessage("下载失败!").setResult(false).setData(fileName);
+
             try {
+                response.setStatus(500);
+                response.setContentType("application/json");
+                response.setCharacterEncoding("UTF-8");
+                DownResultModel downResultModel = new DownResultModel();
+                downResultModel.setCode(-1).setMessage("下载失败!").setResult(false).setData(fileName);
                 response.getWriter().write(JSON.toJSONString(downResultModel));
             } catch (IOException e1) {
                 e1.printStackTrace();

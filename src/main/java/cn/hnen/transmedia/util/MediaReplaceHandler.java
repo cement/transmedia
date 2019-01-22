@@ -9,7 +9,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import static cn.hnen.transmedia.config.MediaDistributeConfig.downloadMediaDir;
+import static cn.hnen.transmedia.config.MediaDistributeConfig.mediaRootDir;
+
 @Component
 public class MediaReplaceHandler {
 
@@ -20,7 +21,7 @@ public class MediaReplaceHandler {
 
     public static Path fileUpload(MultipartFile file) throws IOException {
         String fileName = file.getOriginalFilename();
-        Path path = Paths.get( downloadMediaDir+ fileName);
+        Path path = Paths.get( mediaRootDir+ fileName);
         file.transferTo(path);
         return path;
     }

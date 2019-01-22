@@ -4,7 +4,10 @@ import cn.hnen.transmedia.entry.FileHostDownloadRole;
 import cn.hnen.transmedia.util.MediaDownHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
@@ -22,12 +25,21 @@ public class MediaDistributeService {
     public MediaDownHandler downHandler;
 
 
+    @Autowired
+    public RestTemplate restTemplate;
+
+    @Value("${app.media.rootdir.name:download}")
+    private String mediaRootdirName;
+
     /**
      * 异步下载多个文件
      * @param vos 文件实体集合
      */
-//    @Async 此处可以异步也可同步，因为真正执行的方法是异步的
+    @Async
     public void receiveMediaListAsync(List<FileHostDownloadRole> vos) {
+       receiveMediaList(vos);
+    }
+    public void receiveMediaList(List<FileHostDownloadRole> vos) {
         for (int i = 0; i < vos.size(); i++) {
             //20190112 改同步:
 //            downHandler.receiveMediaAsync(vos.get(i));
@@ -35,6 +47,9 @@ public class MediaDistributeService {
         }
 
     }
+
+
+
 
 
     /**
@@ -45,6 +60,7 @@ public class MediaDistributeService {
     public void downLoadMedia(String fileName, HttpServletResponse response) {
           downHandler.downLoadMedia(fileName,response);
     }
+
 
 }
 
