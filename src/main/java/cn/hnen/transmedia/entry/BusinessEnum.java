@@ -5,7 +5,7 @@ import com.alibaba.fastjson.serializer.SerializeConfig;
 
 public enum BusinessEnum {
 
-    EXISTED(1,"文件已存在"),SUCCESS(2,"成功"),FAILED(3,"失败"),EXCUTING(4,"正在执行"),UNEXIST(5,"源文件不存在");;
+    EXISTED(1,"文件已存在"),SUCCESS(2,"成功"),FAILED(3,"失败"),EXECUTING(4,"正在执行"),UNEXIST(5,"源文件不存在");
 
     public  int code;
     public  String cname;

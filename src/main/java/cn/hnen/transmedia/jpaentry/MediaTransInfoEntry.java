@@ -20,15 +20,15 @@ import java.util.Date;
 public class MediaTransInfoEntry {
 
 
- public static final String DOWN_TYPE_FROM = "from";
- public static final String DOWN_TYPE_TO= "to";
- public static final String DOWN_TYPE_REPLACE= "replace";
- public static final String DOWN_TYPE_REPORT= "report";
+ public static final String TYPE_DOWN_FROM = "from";
+ public static final String TYPE_DOWN_TO = "to";
+ public static final String TYPE_DOWN_REPLACE = "replace";
+ public static final String TYPE_DOWN_REPORT = "report";
 
- public static final String DOWN_RESULT_SUCCESS ="success";
- public static final String DOWN_RESULT_FAILED = "failed";
- public static final String DOWN_RESULT_EXIST= "existed";
- public static final String DOWN_RESULT_UNEXIST= "unexisted";
+ public static final String RESULT_DOWN_SUCCESS ="success";
+ public static final String RESULT_DOWN_FAILED = "failed";
+ public static final String RESULT_DOWN_EXIST = "existed";
+ public static final String RESULT_DOWN_UNEXIST = "unexisted";
 
     @Id
     @Column(name = "id")

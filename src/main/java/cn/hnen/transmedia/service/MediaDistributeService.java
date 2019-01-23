@@ -1,6 +1,7 @@
 package cn.hnen.transmedia.service;
 
 import cn.hnen.transmedia.entry.FileHostDownloadRole;
+import cn.hnen.transmedia.entry.ResponseModel;
 import cn.hnen.transmedia.util.MediaDownHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author YSH
@@ -39,13 +42,18 @@ public class MediaDistributeService {
     public void receiveMediaListAsync(List<FileHostDownloadRole> vos) {
        receiveMediaList(vos);
     }
-    public void receiveMediaList(List<FileHostDownloadRole> vos) {
-        for (int i = 0; i < vos.size(); i++) {
-            //20190112 改同步:
-//            downHandler.receiveMediaAsync(vos.get(i));
-            downHandler.receiveMedia(vos.get(i));
-        }
 
+    public List<ResponseModel> receiveMediaList(List<FileHostDownloadRole> vos) {
+//        List<ResponseModel> resultList = new ArrayList<>();
+//        for (int i = 0; i < vos.size(); i++) {
+//            //20190112 改同步:
+//            //downHandler.receiveMediaAsync(vos.get(i));
+//            ResponseModel responseModel = downHandler.receiveMedia(vos.get(i));
+//            resultList.add(responseModel);
+//        }
+        /*另一种写法*/
+        List<ResponseModel> resultList = vos.stream().map(vo -> downHandler.receiveMedia(vo)).collect(Collectors.toList());
+        return resultList;
     }
 
 

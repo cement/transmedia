@@ -1,11 +1,7 @@
 package cn.hnen.transmedia.util;
 
 import cn.hnen.transmedia.config.MediaDistributeConfig;
-import cn.hnen.transmedia.entry.DownResultModel;
-import cn.hnen.transmedia.entry.FileHostDownloadRole;
-import cn.hnen.transmedia.entry.FileHostDownloadRoleVo;
-import cn.hnen.transmedia.entry.ReciveResultModel;
-import cn.hnen.transmedia.exception.MediaDownloadException;
+import cn.hnen.transmedia.entry.*;
 import cn.hnen.transmedia.jpaentry.MediaTransInfoEntry;
 import cn.hnen.transmedia.repository.MediaTransRepository;
 import com.alibaba.fastjson.JSON;
@@ -15,7 +11,6 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
-import org.springframework.util.FileCopyUtils;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestClientException;
@@ -51,12 +46,11 @@ public class MediaDownHandler {
      * @param vo
      * @return
      */
-    public ReciveResultModel receiveMedia(FileHostDownloadRole vo) {
+    public ResponseModel receiveMedia(FileHostDownloadRole vo) {
 
         long start = System.currentTimeMillis();
         log.info("开始下载 {}", vo.getFileName());
 
-        ReciveResultModel resultModel = new ReciveResultModel();
 
         FileOutputStream outputStream = null;
         InputStream inputStream = null;
@@ -74,20 +68,19 @@ public class MediaDownHandler {
                     downloadInfoEntry.setFileId(vo.getId());
                     downloadInfoEntry.setCityId(vo.getCityId());
                     downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-                    downloadInfoEntry.setDownLoadResult(DOWN_RESULT_EXIST);
-                    downloadInfoEntry.setDownloadType(DOWN_TYPE_FROM);
+                    downloadInfoEntry.setDownLoadResult(RESULT_DOWN_EXIST);
+                    downloadInfoEntry.setDownloadType(TYPE_DOWN_FROM);
                     downloadInfoEntry.setFileName(vo.getFileName());
                     downloadInfoEntry.setBeginPlayTime(vo.getBeginPlayTime());
                     downloadInfoEntry.setDescribe("文件已存在!");
                     mediaDownRepository.save(downloadInfoEntry);
 
-                    /*返回*/
-                    resultModel.setResultCode(1);
-                    resultModel.getExistedList().add(targetFile.getName());
+
                     /*汇报结果*/
                     this.doDownReport(vo);
 
-                    return resultModel;
+                    /*返回*/
+                    return ResponseModel.warp(BusinessEnum.EXISTED).setData(vo.getFileName());
                 }
             }
 
@@ -102,17 +95,15 @@ public class MediaDownHandler {
                 downloadInfoEntry.setFileId(vo.getId());
                 downloadInfoEntry.setCityId(vo.getCityId());
                 downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-                downloadInfoEntry.setDownLoadResult(DOWN_RESULT_UNEXIST);
-                downloadInfoEntry.setDownloadType(DOWN_TYPE_FROM);
+                downloadInfoEntry.setDownLoadResult(RESULT_DOWN_UNEXIST);
+                downloadInfoEntry.setDownloadType(TYPE_DOWN_FROM);
                 downloadInfoEntry.setFileName(vo.getFileName());
                 downloadInfoEntry.setBeginPlayTime(vo.getBeginPlayTime());
                 downloadInfoEntry.setDescribe("上级文件不存在!");
                 mediaDownRepository.save(downloadInfoEntry);
-                /*返回值*/
-                resultModel.setResultCode(-1);
-                resultModel.getFailedList().add(vo.getFileName());
 
-                return resultModel;
+                /*返回值*/
+                return ResponseModel.warp(BusinessEnum.FAILED).setData(vo.getFileName());
             }
 
             inputStream = respEntry.getBody().getInputStream();
@@ -134,9 +125,9 @@ public class MediaDownHandler {
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
             downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-            downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
+            downloadInfoEntry.setDownLoadResult(RESULT_DOWN_SUCCESS);
             downloadInfoEntry.setFileName(vo.getFileName());
-            downloadInfoEntry.setDownloadType(DOWN_TYPE_FROM);
+            downloadInfoEntry.setDownloadType(TYPE_DOWN_FROM);
             downloadInfoEntry.setBeginPlayTime(vo.getBeginPlayTime());
             downloadInfoEntry.setDownLoadDuration(stop - start);
             downloadInfoEntry.setDescribe("文件大小:" + targetFile.length() / 1024 + "K,耗时: " + (stop - start) + "毫秒");
@@ -145,8 +136,7 @@ public class MediaDownHandler {
            /*汇报结果*/
             this.doDownReport(vo);
            /*返回值*/
-            resultModel.setResultCode(0);
-            resultModel.getDownedList().add(vo.getFileName());
+            return ResponseModel.warp(BusinessEnum.SUCCESS).setData(vo.getFileName());
 
         } catch (Exception e) {
 
@@ -159,9 +149,9 @@ public class MediaDownHandler {
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
             downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-            downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);
+            downloadInfoEntry.setDownLoadResult(RESULT_DOWN_FAILED);
             downloadInfoEntry.setFileName(vo.getFileName());
-            downloadInfoEntry.setDownloadType(DOWN_TYPE_FROM);
+            downloadInfoEntry.setDownloadType(TYPE_DOWN_FROM);
             downloadInfoEntry.setBeginPlayTime(vo.getBeginPlayTime());
             downloadInfoEntry.setDownLoadDuration(stop - start);
             downloadInfoEntry.setDescribe(e.getMessage() != null ? e.getMessage() : e.toString());
@@ -169,8 +159,7 @@ public class MediaDownHandler {
             mediaDownRepository.save(downloadInfoEntry);
 
             /*返回*/
-            resultModel.setResultCode(-2);
-            resultModel.getFailedList().add(vo.getFileName());
+            return ResponseModel.warp(BusinessEnum.FAILED).setData(vo.getFileName());
             //e.printStackTrace();
 
         } finally {
@@ -179,6 +168,7 @@ public class MediaDownHandler {
                     inputStream.close();
                 } catch (IOException e1) {
                     e1.printStackTrace();
+
                 }
             }
             if (outputStream != null) {
@@ -189,7 +179,7 @@ public class MediaDownHandler {
                 }
             }
         }
-        return resultModel;
+
     }
 
 
@@ -199,7 +189,7 @@ public class MediaDownHandler {
      */
     @Async
     public void receiveMediaAsync(FileHostDownloadRole vo) {
-        ReciveResultModel resultModel = receiveMedia(vo);
+        receiveMedia(vo);
     }
 
 
@@ -224,8 +214,8 @@ public class MediaDownHandler {
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
             downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-            downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
-            downloadInfoEntry.setDownloadType(DOWN_TYPE_REPORT);
+            downloadInfoEntry.setDownLoadResult(RESULT_DOWN_SUCCESS);
+            downloadInfoEntry.setDownloadType(TYPE_DOWN_REPORT);
             downloadInfoEntry.setFileName(vo.getFileName());
             downloadInfoEntry.setBeginPlayTime(vo.getBeginPlayTime());
             downloadInfoEntry.setDescribe("下载文件 汇报失败!!");
@@ -240,8 +230,8 @@ public class MediaDownHandler {
             downloadInfoEntry.setFileId(vo.getId());
             downloadInfoEntry.setCityId(vo.getCityId());
             downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-            downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);
-            downloadInfoEntry.setDownloadType(DOWN_TYPE_REPORT);
+            downloadInfoEntry.setDownLoadResult(RESULT_DOWN_FAILED);
+            downloadInfoEntry.setDownloadType(TYPE_DOWN_REPORT);
             downloadInfoEntry.setFileName(vo.getFileName());
             downloadInfoEntry.setBeginPlayTime(vo.getBeginPlayTime());
             downloadInfoEntry.setDescribe("下载文件 汇报失败!!");
@@ -275,9 +265,9 @@ public class MediaDownHandler {
 
                 MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
                 downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-                downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);
+                downloadInfoEntry.setDownLoadResult(RESULT_DOWN_FAILED);
                 downloadInfoEntry.setFileName(fileName);
-                downloadInfoEntry.setDownloadType(DOWN_TYPE_TO);
+                downloadInfoEntry.setDownloadType(TYPE_DOWN_TO);
                 downloadInfoEntry.setDescribe("下载失败,文件不存在!");
                 downloadInfoEntry.setDownLoadDuration(stop - start);
                 mediaDownRepository.save(downloadInfoEntry);
@@ -314,9 +304,9 @@ public class MediaDownHandler {
                 MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
 
                 downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-                downloadInfoEntry.setDownLoadResult(DOWN_RESULT_SUCCESS);
+                downloadInfoEntry.setDownLoadResult(RESULT_DOWN_SUCCESS);
                 downloadInfoEntry.setFileName(fileName);
-                downloadInfoEntry.setDownloadType(DOWN_TYPE_TO);
+                downloadInfoEntry.setDownloadType(TYPE_DOWN_TO);
                 downloadInfoEntry.setDescribe("设备端 下载完成  文件名称: " + fileName);
                 downloadInfoEntry.setDownLoadDuration(stop - start);
 
@@ -330,9 +320,9 @@ public class MediaDownHandler {
             MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
 
             downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-            downloadInfoEntry.setDownLoadResult(DOWN_RESULT_FAILED);
+            downloadInfoEntry.setDownLoadResult(RESULT_DOWN_FAILED);
             downloadInfoEntry.setFileName(fileName);
-            downloadInfoEntry.setDownloadType(DOWN_TYPE_TO);
+            downloadInfoEntry.setDownloadType(TYPE_DOWN_TO);
             downloadInfoEntry.setDescribe(e.getMessage() != null ? e.getMessage() : e.toString());
             downloadInfoEntry.setDownLoadDuration(stop - start);
             mediaDownRepository.save(downloadInfoEntry);
