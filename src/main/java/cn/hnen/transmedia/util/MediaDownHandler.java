@@ -2,6 +2,7 @@ package cn.hnen.transmedia.util;
 
 import cn.hnen.transmedia.config.MediaDistributeConfig;
 import cn.hnen.transmedia.entry.*;
+import cn.hnen.transmedia.exception.MediaDownloadException;
 import cn.hnen.transmedia.jpaentry.MediaTransInfoEntry;
 import cn.hnen.transmedia.repository.MediaTransRepository;
 import com.alibaba.fastjson.JSON;
@@ -9,6 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
+import org.springframework.retry.annotation.Backoff;
+import org.springframework.retry.annotation.Recover;
+import org.springframework.retry.annotation.Retryable;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
@@ -21,6 +25,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
 import static cn.hnen.transmedia.config.MediaDistributeConfig.*;
+import static cn.hnen.transmedia.entry.BusinessEnum.FAILED;
 import static cn.hnen.transmedia.jpaentry.MediaTransInfoEntry.*;
 
 /**
@@ -180,6 +185,21 @@ public class MediaDownHandler {
             }
         }
 
+    }
+
+
+
+    @Retryable(value = MediaDownloadException.class,maxAttempts =3,backoff = @Backoff(delay = 3000,multiplier = 3))
+    public ResponseModel receiveMediaSync(FileHostDownloadRole vo) {
+        ResponseModel responseModel = receiveMedia(vo);
+        return responseModel;
+    }
+
+    @Recover
+    public ResponseModel recoverReceiveSync(MediaDownloadException e, String fileName){
+        log.error(" download sync*** 重试失败！***; {}",fileName,e.getMessage(),e);
+
+        return ResponseModel.warp(FAILED).setData(fileName);
     }
 
 
