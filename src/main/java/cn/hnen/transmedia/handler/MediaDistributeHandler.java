@@ -1,8 +1,8 @@
-package cn.hnen.transmedia.util;
+package cn.hnen.transmedia.handler;
 
 import cn.hnen.transmedia.config.MediaDistributeConfig;
 import cn.hnen.transmedia.entry.*;
-import cn.hnen.transmedia.exception.MediaDownloadException;
+import cn.hnen.transmedia.exception.MediaReciveException;
 import cn.hnen.transmedia.jpaentry.MediaTransInfoEntry;
 import cn.hnen.transmedia.repository.MediaTransRepository;
 import com.alibaba.fastjson.JSON;
@@ -10,10 +10,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
-import org.springframework.retry.annotation.Backoff;
-import org.springframework.retry.annotation.Recover;
-import org.springframework.retry.annotation.Retryable;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -25,7 +21,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
 import static cn.hnen.transmedia.config.MediaDistributeConfig.*;
-import static cn.hnen.transmedia.entry.BusinessEnum.FAILED;
 import static cn.hnen.transmedia.jpaentry.MediaTransInfoEntry.*;
 
 /**
@@ -35,7 +30,7 @@ import static cn.hnen.transmedia.jpaentry.MediaTransInfoEntry.*;
  */
 @Slf4j
 @Component
-public class MediaDownHandler {
+public class MediaDistributeHandler {
 
 
     @Autowired
@@ -44,6 +39,7 @@ public class MediaDownHandler {
     @Autowired
     private MediaTransRepository mediaDownRepository;
 
+    public int testCount;
 
     /**
      * 自写单文件下载，可以定义缓冲大小，默认1024000；
@@ -80,12 +76,11 @@ public class MediaDownHandler {
                     downloadInfoEntry.setDescribe("文件已存在!");
                     mediaDownRepository.save(downloadInfoEntry);
 
-
                     /*汇报结果*/
                     this.doDownReport(vo);
 
                     /*返回*/
-                    return ResponseModel.warp(BusinessEnum.EXISTED).setData(vo.getFileName());
+                    return ResponseModel.warp(BusinessEnum.EXISTED).setResult(vo.getFileName());
                 }
             }
 
@@ -108,7 +103,7 @@ public class MediaDownHandler {
                 mediaDownRepository.save(downloadInfoEntry);
 
                 /*返回值*/
-                return ResponseModel.warp(BusinessEnum.FAILED).setData(vo.getFileName());
+                return ResponseModel.warp(BusinessEnum.FAILED).setResult(vo.getFileName());
             }
 
             inputStream = respEntry.getBody().getInputStream();
@@ -141,7 +136,7 @@ public class MediaDownHandler {
            /*汇报结果*/
             this.doDownReport(vo);
            /*返回值*/
-            return ResponseModel.warp(BusinessEnum.SUCCESS).setData(vo.getFileName());
+            return ResponseModel.warp(BusinessEnum.SUCCESS).setResult(vo.getFileName());
 
         } catch (Exception e) {
 
@@ -163,8 +158,11 @@ public class MediaDownHandler {
 
             mediaDownRepository.save(downloadInfoEntry);
 
+            /*重新抛出异常，以便@Retryable进行重试*/
+            throw new MediaReciveException(e);
+
             /*返回*/
-            return ResponseModel.warp(BusinessEnum.FAILED).setData(vo.getFileName());
+//            return ResponseModel.warp(BusinessEnum.FAILED).setData(vo.getFileName());
             //e.printStackTrace();
 
         } finally {
@@ -189,28 +187,6 @@ public class MediaDownHandler {
 
 
 
-    @Retryable(value = MediaDownloadException.class,maxAttempts =3,backoff = @Backoff(delay = 3000,multiplier = 3))
-    public ResponseModel receiveMediaSync(FileHostDownloadRole vo) {
-        ResponseModel responseModel = receiveMedia(vo);
-        return responseModel;
-    }
-
-    @Recover
-    public ResponseModel recoverReceiveSync(MediaDownloadException e, String fileName){
-        log.error(" download sync*** 重试失败！***; {}",fileName,e.getMessage(),e);
-
-        return ResponseModel.warp(FAILED).setData(fileName);
-    }
-
-
-    /**
-     * 异步下载
-     * @param vo
-     */
-    @Async
-    public void receiveMediaAsync(FileHostDownloadRole vo) {
-        receiveMedia(vo);
-    }
 
 
     /**

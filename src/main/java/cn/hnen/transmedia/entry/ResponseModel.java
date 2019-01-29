@@ -17,13 +17,70 @@ public class ResponseModel{
     public String name;
     public String message;
     public String detail;
+    public String log;
+
+
+
     public Object data;
+    public Object result;
+    public Object extra;
 
 
-    public ResponseModel(int code, String message, Object data) {
+
+    public Object getData() {
+        return data;
+    }
+
+    public ResponseModel setData(Object data) {
+        this.data = data;
+        return this;
+    }
+
+    public Object getExtra() {
+        return extra;
+    }
+
+    public ResponseModel setExtra(Object extra) {
+        this.extra = extra;
+        return this;
+    }
+
+
+    public String getLog() {
+        return log;
+    }
+
+    public ResponseModel setLog(String log) {
+        this.log = log;
+        return this;
+    }
+
+    public Object getResult() {
+        return result;
+    }
+
+    public ResponseModel setResult(Object result) {
+        this.result = result;
+        return this;
+    }
+
+
+    public Throwable getException() {
+        return exception;
+    }
+
+    public ResponseModel setException(Throwable exception) {
+        this.exception = exception;
+        return this;
+    }
+
+    public Throwable exception;
+
+
+    public ResponseModel(int code, String message, Object result) {
         this.code = code;
         this.message = message;
-        this.data = data;
+        this.result = result;
     }
 
     public ResponseModel(int code, String message) {
@@ -55,17 +112,6 @@ public class ResponseModel{
         return this;
     }
 
-    public Object getData() {
-        return data;
-    }
-
-    public ResponseModel setData(Object data) {
-        this.data = data;
-        return this;
-    }
-
-
-
     public String getDetail() {
         return detail;
     }
@@ -89,5 +135,7 @@ public class ResponseModel{
         model.setName(adEnum.name()).setDetail(adEnum.detail);
        return model;
     }
+
+
 
 }

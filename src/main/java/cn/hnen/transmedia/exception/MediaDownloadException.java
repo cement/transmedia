@@ -5,37 +5,26 @@ package cn.hnen.transmedia.exception;
  * @create  201812
  * @desc  自定义异常，用于同一异常处理
  */
-public class MediaDownloadException extends RuntimeException {
+public class MediaDownloadException extends MediaBaseException {
 
 
-    public int getCode() {
-        return code;
+    public MediaDownloadException() {
+        super();
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public MediaDownloadException(String message) {
+        super(message);
     }
 
-    public Object getObj() {
-        return obj;
+    public MediaDownloadException(String message, Throwable cause) {
+        super(message, cause);
     }
 
-    public void setObj(Object obj) {
-        this.obj = obj;
-    }
-
-    public int code;
-    public Object obj;
-
-    public MediaDownloadException(int code,Object obj) {
-        this.code = code;
-        this.obj = obj;
-    }
-    public MediaDownloadException(int code) {
-        this.code = code;
-    }
     public MediaDownloadException(Throwable cause) {
         super(cause);
     }
 
+    protected MediaDownloadException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
 }

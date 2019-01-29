@@ -18,11 +18,10 @@ import javax.servlet.http.HttpServletResponse;
 public class MediaExceptionHandler {
 
 
-    @ExceptionHandler(MediaDownloadException .class)
-    public ResponseModel mediaUploadExceptionHandler(MediaDownloadException e, HttpServletResponse response) {
+    @ExceptionHandler(MediaBaseException.class)
+    public ResponseModel mediaUploadExceptionHandler(Exception e, HttpServletResponse response) {
            ResponseModel model = new ResponseModel(1);
-           model.setCode(e.getCode()).setMessage(e.getMessage()).setData(e.getObj());
-           response.setStatus(440+e.getCode());
+
         return model;
     }
 

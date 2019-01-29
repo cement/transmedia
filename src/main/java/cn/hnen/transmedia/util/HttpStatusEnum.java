@@ -1,4 +1,4 @@
-package cn.hnen.transmedia.entry;
+package cn.hnen.transmedia.util;
 
 
 import org.springframework.lang.Nullable;
