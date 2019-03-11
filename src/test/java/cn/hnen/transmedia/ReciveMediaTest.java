@@ -1,34 +1,14 @@
 package cn.hnen.transmedia;
 
-import cn.hnen.transmedia.entry.FileHostDownloadRole;
-import cn.hnen.transmedia.entry.ReciveResultModel;
-import cn.hnen.transmedia.jpaentry.MediaTransInfoEntry;
 import cn.hnen.transmedia.repository.MediaTransRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.core.io.Resource;
-import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.web.client.RestTemplate;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-
-import static cn.hnen.transmedia.config.MediaDistributeConfig.downloadApiPath;
-import static cn.hnen.transmedia.config.MediaDistributeConfig.downloadBufferSize;
-import static cn.hnen.transmedia.config.MediaDistributeConfig.downloadMediaDir;
-import static cn.hnen.transmedia.jpaentry.MediaTransInfoEntry.*;
-import static cn.hnen.transmedia.jpaentry.MediaTransInfoEntry.DOWN_RESULT_FAILED;
-import static cn.hnen.transmedia.jpaentry.MediaTransInfoEntry.DOWN_TYPE_FROM;
 
 @Slf4j
 @RunWith(SpringRunner.class)

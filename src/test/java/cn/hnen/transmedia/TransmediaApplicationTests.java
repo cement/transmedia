@@ -17,7 +17,6 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
 
@@ -102,8 +101,8 @@ public class TransmediaApplicationTests {
     public void saveTest() {
         MediaTransInfoEntry downloadInfoEntry= new MediaTransInfoEntry();
         downloadInfoEntry.setFileId(33333333L);
-        downloadInfoEntry.setDownLoadResult(MediaTransInfoEntry.DOWN_RESULT_SUCCESS);
-        downloadInfoEntry.setDownloadType(MediaTransInfoEntry.DOWN_TYPE_FROM);
+        downloadInfoEntry.setDownLoadResult(MediaTransInfoEntry.RESULT_DOWN_SUCCESS);
+        downloadInfoEntry.setDownloadType(MediaTransInfoEntry.TYPE_DOWN_FROM);
         downloadInfoEntry.setFileName("dcq.txt");
         downloadInfoEntry.setBeginPlayTime(null);
         mediaDownRepository.save(downloadInfoEntry);

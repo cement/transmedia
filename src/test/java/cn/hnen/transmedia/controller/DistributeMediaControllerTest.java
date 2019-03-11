@@ -38,23 +38,29 @@ public class DistributeMediaControllerTest {
         List<FileHostDownloadRole> list = new ArrayList<>();
         FileHostDownloadRole fileHostDownloadRole0 = new FileHostDownloadRole();
 
-        fileHostDownloadRole0.setFileName("15447546433643a370b6081bc466c92a6dd5e3855431d.jpg");
+        fileHostDownloadRole0.setFileName("a.mp4");
         fileHostDownloadRole0.setId(1L);
 
         list.add(fileHostDownloadRole0);
 
 
         FileHostDownloadRole fileHostDownloadRole1 = new FileHostDownloadRole();
-        fileHostDownloadRole1.setFileName("1544772881119896f3bfe312e4e4294b38a16ef74c21a.mp4");
+        fileHostDownloadRole1.setFileName("a.txt");
         fileHostDownloadRole1.setId(2L);
 
         list.add(fileHostDownloadRole1);
 
         FileHostDownloadRole fileHostDownloadRole2 = new FileHostDownloadRole();
-        fileHostDownloadRole2.setFileName("15448189031659380605287fe42ea9dce867bc44af81a.mp4");
+        fileHostDownloadRole2.setFileName("b.txt");
         fileHostDownloadRole2.setId(3L);
 
         list.add(fileHostDownloadRole2);
+
+        FileHostDownloadRole fileHostDownloadRole22 = new FileHostDownloadRole();
+        fileHostDownloadRole22.setFileName("b.mp4");
+        fileHostDownloadRole22.setId(3L);
+
+        list.add(fileHostDownloadRole22);
 
         FileHostDownloadRole fileHostDownloadRole3 = new FileHostDownloadRole();
         fileHostDownloadRole3.setFileName("154477337607248866014ddcf423988077817ccb4e240.mp4");
@@ -68,7 +74,7 @@ public class DistributeMediaControllerTest {
         HashMap<String, Object> paramsMap = new HashMap<>();
         paramsMap.put("data",listStr);
 
-        ResponseEntity<String> reportResult = restTemplate.getForEntity("http://127.0.0.1:8001/api/distribute/receive?data={data}",  String.class,paramsMap);
+        ResponseEntity<String> reportResult = restTemplate.getForEntity("http://127.0.0.1:8008/api/distribute/receive?data={data}",  String.class,paramsMap);
         String result = reportResult.getBody();
 
     }
