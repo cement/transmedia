@@ -18,12 +18,11 @@ import java.util.Objects;
 public class MediaHandlerAspect {
 
 
-    @Pointcut("@annotation(cn.hnen.transmedia.handler.RecordLog)")
+    @Pointcut("@annotation(cn.hnen.transmedia.annotation.RecordLog)")
     public void mediaHandlerPoint() {}
 
     @Before("mediaHandlerPoint()")
     public void doBefore(JoinPoint joinPoint)  {
-
         log.info("开始{},{}",joinPoint.getSignature().getName(),joinPoint.getArgs()[0]);
     }
     @After("mediaHandlerPoint()")
@@ -52,7 +51,7 @@ public class MediaHandlerAspect {
         }
     }
 
-    /*注意：用@Around这个注解，@Retryable 不生效。测试好长时间，郁闷！*/
+/*注意：用@Around这个注解，@Retryable 不生效。测试好长时间，郁闷！*/
 
 //    //环绕通知,环绕增强，相当于MethodInterceptor
 //    @Around("mediaHandlerPoint()")

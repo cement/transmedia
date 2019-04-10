@@ -99,7 +99,7 @@ public class MediaReplaceService {
      * 2 、要触发@Recover方法，那么在@Retryable方法上不能有返回值，只能是void才能生效,--->>>>>这句是错误的，经测试，@Recover方法必须与@Retryable方法返回值一致，第一入参为要重试的异常，其他参数与@Retryable保持一致，返回值也要一样，否则无法执行。
      *
      * 3 、非幂等情况下慎用
-     * 4 、使用了@Retryable的方法里面不能使用try...catch包裹，要在方法上抛出异常，不然不会触发 --->>>RuntimeException直接抛出，并不在方法上shroews,也是可以的。
+     * 4 、使用了@Retryable的方法里面不能使用try...catch包裹，要在方法上抛出异常，不然不会触发 --->>>RuntimeException直接抛出，并不在方法上throews,也是可以的。
      */
 
 

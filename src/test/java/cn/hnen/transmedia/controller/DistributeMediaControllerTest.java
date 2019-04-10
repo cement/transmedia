@@ -74,8 +74,10 @@ public class DistributeMediaControllerTest {
         HashMap<String, Object> paramsMap = new HashMap<>();
         paramsMap.put("data",listStr);
 
-        ResponseEntity<String> reportResult = restTemplate.getForEntity("http://127.0.0.1:8008/api/distribute/receive?data={data}",  String.class,paramsMap);
-        String result = reportResult.getBody();
+        System.out.println(JSON.toJSONString(paramsMap));
+
+//        ResponseEntity<String> reportResult = restTemplate.getForEntity("http://127.0.0.1:8008/api/distribute/receive?data={data}",  String.class,paramsMap);
+//        String result = reportResult.getBody();
 
     }
 

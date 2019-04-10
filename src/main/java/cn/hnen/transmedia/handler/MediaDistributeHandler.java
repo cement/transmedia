@@ -39,10 +39,9 @@ public class MediaDistributeHandler {
     @Autowired
     private MediaTransRepository mediaDownRepository;
 
-    public int testCount;
 
     /**
-     * 自写单文件下载，可以定义缓冲大小，默认1024000；
+     * 自写单文件下载，可以定义缓冲大小，默认102400；
      *
      * @param vo
      * @return
@@ -84,7 +83,7 @@ public class MediaDistributeHandler {
                 }
             }
 
-            String url = downloadApiPath + "?fileName=" + vo.getFileName();
+            String url = downloadApiUrl + "?fileName=" + vo.getFileName();
             ResponseEntity<Resource> respEntry = restTemplate.getForEntity(url, Resource.class);
 
             if (200 != respEntry.getStatusCodeValue()) {
@@ -140,6 +139,11 @@ public class MediaDistributeHandler {
 
         } catch (Exception e) {
 
+            /*如果存在未下载完成的文件，则删除*/
+            if (targetFile.exists()){
+                targetFile.delete();
+            }
+
             long stop = System.currentTimeMillis();
             /*记录日志*/
             log.error("下载失败  文件名称: {}, 失败原因: {},耗时{}", vo.getFileName(), e.getMessage(), stop - start);
@@ -160,10 +164,6 @@ public class MediaDistributeHandler {
 
             /*重新抛出异常，以便@Retryable进行重试*/
             throw new MediaReciveException(e);
-
-            /*返回*/
-//            return ResponseModel.warp(BusinessEnum.FAILED).setData(vo.getFileName());
-            //e.printStackTrace();
 
         } finally {
             if (inputStream != null) {
@@ -239,140 +239,8 @@ public class MediaDistributeHandler {
     }
 
 
-    /**
-     * 设备端下载
-     *
-     * @param fileName
-     * @param response
-     */
-    public void downLoadMedia(String fileName, HttpServletResponse response) {
 
 
-        long start = System.currentTimeMillis();
-        log.info("设备端 开始下载 {}", fileName);
-        FileInputStream fileInStream = null;
-//        InputStream requInStream = null;
-//        FileOutputStream fileOutStream = null;
-        ServletOutputStream respOutStream = null;
-        try {
-            File downFile = new File(mediaRootDir, fileName);
-            if (!downFile.exists()) {
-                long stop = System.currentTimeMillis();
 
-                MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
-                downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-                downloadInfoEntry.setDownLoadResult(RESULT_DOWN_FAILED);
-                downloadInfoEntry.setFileName(fileName);
-                downloadInfoEntry.setDownloadType(TYPE_DOWN_TO);
-                downloadInfoEntry.setDescribe("下载失败,文件不存在!");
-                downloadInfoEntry.setDownLoadDuration(stop - start);
-                mediaDownRepository.save(downloadInfoEntry);
-
-                log.error("设备端 下载失败！  文件名称: {};错误信息：{}", downFile.getName(), "文件不存在!");
-
-                response.setStatus(501);
-                response.setContentType("application/json");
-                response.setCharacterEncoding("UTF-8");
-                DownResultModel downResultModel = new DownResultModel();
-                downResultModel.setCode(-1).setMessage("下载失败,文件不存在!").setResult(false).setData(fileName);
-                try {
-                    response.getWriter().write(JSON.toJSONString(downResultModel));
-                } catch (IOException e1) {
-                    log.error("设备端 下载失败写出错误！  文件名称: {};错误信息：{}", downFile.getName(), "文件不存在!");
-                    e1.printStackTrace();
-                }
-
-            } else {
-                fileInStream = new FileInputStream(downFile);
-                respOutStream = response.getOutputStream();
-                response.setContentType("application/octet-stream");
-                response.setHeader("Content-Disposition", "attachment; filename=" + new String(fileName.getBytes("utf-8"), "iso-8859-1"));
-
-                byte[] buffer = new byte[MediaDistributeConfig.downloadBufferSize];
-                int readed = 0;
-                while ((readed = fileInStream.read(buffer)) != -1) {
-                    respOutStream.write(buffer, 0, readed);
-                }
-                respOutStream.flush();
-
-                long stop = System.currentTimeMillis();
-
-                MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
-
-                downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-                downloadInfoEntry.setDownLoadResult(RESULT_DOWN_SUCCESS);
-                downloadInfoEntry.setFileName(fileName);
-                downloadInfoEntry.setDownloadType(TYPE_DOWN_TO);
-                downloadInfoEntry.setDescribe("设备端 下载完成  文件名称: " + fileName);
-                downloadInfoEntry.setDownLoadDuration(stop - start);
-
-                mediaDownRepository.save(downloadInfoEntry);
-
-                log.info("设备端 下载完成  文件名称: {},文件大小:{},耗时 {}毫秒", fileName, downFile.length(), (stop - start));
-            }
-        } catch (Exception e) {
-
-            long stop = System.currentTimeMillis();
-            MediaTransInfoEntry downloadInfoEntry = new MediaTransInfoEntry();
-
-            downloadInfoEntry.setDownloadMediaDir(mediaRootDir);
-            downloadInfoEntry.setDownLoadResult(RESULT_DOWN_FAILED);
-            downloadInfoEntry.setFileName(fileName);
-            downloadInfoEntry.setDownloadType(TYPE_DOWN_TO);
-            downloadInfoEntry.setDescribe(e.getMessage() != null ? e.getMessage() : e.toString());
-            downloadInfoEntry.setDownLoadDuration(stop - start);
-            mediaDownRepository.save(downloadInfoEntry);
-
-            log.error("设备端 下载失败  文件名称: {};错误信息：{}", mediaRootDir + fileName, e.getMessage() != null ? e.getMessage() : e.toString());
-
-
-            try {
-                response.setStatus(500);
-                response.setContentType("application/json");
-                response.setCharacterEncoding("UTF-8");
-                DownResultModel downResultModel = new DownResultModel();
-                downResultModel.setCode(-1).setMessage("下载失败!").setResult(false).setData(fileName);
-                response.getWriter().write(JSON.toJSONString(downResultModel));
-            } catch (IOException e1) {
-                e1.printStackTrace();
-            }
-
-        } finally {
-
-            if (fileInStream != null) {
-                try {
-                    fileInStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            if (respOutStream != null) {
-                try {
-                    respOutStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }
-
-
-    }
-
-
-    //**jdk**私有方法源码
-    public static long copy(InputStream source, OutputStream sink)
-            throws IOException
-    {
-        long nread = 0L;
-        byte[] buf = new byte[8192];
-        int n;
-        while ((n = source.read(buf)) > 0) {
-            sink.write(buf, 0, n);
-            nread += n;
-        }
-        return nread;
-    }
 
 }

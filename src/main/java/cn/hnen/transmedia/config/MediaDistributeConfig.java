@@ -19,7 +19,7 @@ public class MediaDistributeConfig {
         MediaDistributeConfig.mediaRootDir = mediaRootDir.endsWith(File.separator) ? mediaRootDir : mediaRootDir + File.separator;
     }
 
-    @Value("${app.media.path.ref:media}")
+    @Value("${app.media.path.ref}")
     public void setMediaPathRef(String mediaPath) {
 
         mediaPathRef = mediaPath.startsWith("/") ?mediaPath : "/"+mediaPath;
@@ -38,8 +38,8 @@ public class MediaDistributeConfig {
     }
 
     @Value("${app.download.api.path}")
-    public void setDownloadApiPath(String downloadApiPath) {
-        MediaDistributeConfig.downloadApiPath = downloadApiPath;
+    public void setDownloadApiUrl(String downloadApiUrl) {
+        MediaDistributeConfig.downloadApiUrl = downloadApiUrl;
     }
 
     @Value("${app.upload.filekey}")
@@ -63,10 +63,10 @@ public class MediaDistributeConfig {
         MediaDistributeConfig.replaceDownloadReportApi = replaceDownloadReportApi;
     }
 //    public static String downloadMediaDir;  //上传文件夹
-    public static String mediaRootDir;  //媒体文件存储文件夹
-    public static String mediaPathRef;  //媒体文件路径映射
+    public static String mediaRootDir;  //媒体文件存储文件夹(根文件夹)
+    public static String mediaPathRef;  //媒体文件路径映射(请求路径)
 
-    public static String downloadApiPath;  //分发下载路径
+    public static String downloadApiUrl;  //分发下载路径
     public static String downloadReportUrl;  //下载文件结果汇报地址
     public static int downloadBufferSize;//复制文件缓冲区大小,单位:byte；
 

@@ -1,5 +1,6 @@
 package cn.hnen.transmedia.handler;
 
+import cn.hnen.transmedia.annotation.RecordLog;
 import cn.hnen.transmedia.config.MediaDistributeConfig;
 import cn.hnen.transmedia.entry.ResponseModel;
 import cn.hnen.transmedia.exception.MediaDownloadException;

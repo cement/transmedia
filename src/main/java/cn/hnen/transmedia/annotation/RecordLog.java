@@ -1,4 +1,4 @@
-package cn.hnen.transmedia.handler;
+package cn.hnen.transmedia.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

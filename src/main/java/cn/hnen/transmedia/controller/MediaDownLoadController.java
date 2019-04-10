@@ -1,6 +1,7 @@
 package cn.hnen.transmedia.controller;
 
 import cn.hnen.transmedia.service.MediaDistributeService;
+import cn.hnen.transmedia.util.MyUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponses;
@@ -9,8 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 import static cn.hnen.transmedia.config.MediaDistributeConfig.mediaPathRef;
 
@@ -41,28 +44,13 @@ public class MediaDownLoadController {
     @ApiOperation(value = "设备端文件下载", notes = "设备端文件下载webapi接口")
     @ApiResponses({})
     @RequestMapping(value = "/down", method = {RequestMethod.GET, RequestMethod.POST})
-    public void clientDownMedia(@RequestParam("fileName") String fileName, HttpServletResponse response) {
-        downloadMediaService.downLoadMedia(fileName, response);
+    public void clientDownMedia(@RequestParam("fileName") String fileName, HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
+        /*2019-03-11 改服务器跳转接口*/
+//        downloadMediaService.downLoadMedia(fileName, response);
+            request.getRequestDispatcher(mediaPathRef + fileName).forward(request, response);
+            log.info("Client [{}]  downLoad finished:{}", MyUtil.getIpAddress(request),fileName);
     }
 
-//
-//    @ApiOperation(value = "提供下载(输出流)", notes = "提供下载api接口")
-//    @RequestMapping(value = "/fordown", method = {RequestMethod.GET, RequestMethod.POST})
-//    public void forDown(HttpServletRequest request, HttpServletResponse response, @RequestParam("fileName") String fileName) {
-//        Path srcPath = Paths.get("E:/Test/advertfiles", fileName);
-//        try (OutputStream outStream = response.getOutputStream()) {
-////                response.setContentType("application/octet-stream");
-////                response.setHeader("Content-Disposition", "attachment; filename=" + new String(filename.getBytes("utf-8"), "iso-8859-1"));
-////                String filname = Charset.forName("iso-8859-1").decode(Charset.forName("utf-8").encode(filename)).toString();
-//            response.setContentType(Files.probeContentType(srcPath));
-//            response.setHeader("Content-Disposition", "attachment; filename=" + fileName);
-//
-//            Files.copy(srcPath, outStream);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
 
 
 
@@ -71,10 +59,28 @@ public class MediaDownLoadController {
     public void downloadForward(HttpServletRequest request, HttpServletResponse response, @PathVariable("fileName") String fileName) {
         try {
             request.getRequestDispatcher(mediaPathRef + fileName).forward(request, response);
-            log.info("forwarded：{},{}", mediaPathRef + fileName, mediaPathRef);
+            log.info("forwarded1：{}", mediaPathRef + fileName);
         } catch (Exception e) {
-            log.error("下载失败！{}", fileName, e.getMessage(), e);
+            log.error("设备端 下载失败！{}", fileName, e.getMessage(), e);
         }
     }
+
+    /**
+     * @param fileName
+     * @param response
+     * @desc 根据文件名进行下载，没有就用json告诉设备端，有就写入流
+     */
+    @ApiOperation(value = "提供设备端下载(服务转发)", notes = "设备端文件下载webapi接口")
+    @ApiResponses({})
+    @RequestMapping(value = "/fordown", method = {RequestMethod.GET, RequestMethod.POST})
+    public void downloadForward(@RequestParam("fileName") String fileName, HttpServletRequest request,HttpServletResponse response) {
+        try {
+            request.getRequestDispatcher(mediaPathRef + fileName).forward(request, response);
+            log.info("forwarded2：{}", mediaPathRef + fileName);
+        } catch (Exception e) {
+            log.error("设备端 下载失败！{}", fileName, e.getMessage(), e);
+        }
+    }
+
 
 }

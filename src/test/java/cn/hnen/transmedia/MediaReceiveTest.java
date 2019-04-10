@@ -49,7 +49,7 @@ public class MediaReceiveTest {
                 }
             }
 
-//            String url = downloadApiPath + "?fileName=" + fileName;
+//            String url = downloadApiUrl + "?fileName=" + fileName;
             String url = "http://192.168.1.150:8080/advertising/api/updateAdvert/downloadAdvert?fileName=" + fileName;
             ResponseEntity<Resource> respEntry = restTemplate.getForEntity(url, Resource.class);
 

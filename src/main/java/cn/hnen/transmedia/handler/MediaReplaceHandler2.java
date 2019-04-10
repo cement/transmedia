@@ -1,36 +1,30 @@
 package cn.hnen.transmedia.handler;
 
+import cn.hnen.transmedia.annotation.RecordLog;
 import cn.hnen.transmedia.config.MediaDistributeConfig;
-import cn.hnen.transmedia.entry.BusinessEnum;
 import cn.hnen.transmedia.entry.ResponseModel;
 import cn.hnen.transmedia.exception.MediaDownloadException;
 import cn.hnen.transmedia.exception.MediaUploadException;
-import cn.hnen.transmedia.jpaentry.MediaTransInfoEntry;
 import cn.hnen.transmedia.repository.MediaTransRepository;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.Resource;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import static cn.hnen.transmedia.config.MediaDistributeConfig.*;
 import static cn.hnen.transmedia.entry.BusinessEnum.*;
-import static cn.hnen.transmedia.jpaentry.MediaTransInfoEntry.*;
 
 
 /**
@@ -43,9 +37,6 @@ public class MediaReplaceHandler2 {
 
     @Autowired
     public RestTemplate restTemplate;
-    @Autowired
-    private MediaTransRepository mediaDownRepository;
-    private int testCount;
 
     @RecordLog
     public ResponseModel uploadMedia(MultipartFile file) {
@@ -54,18 +45,23 @@ public class MediaReplaceHandler2 {
         long start = System.currentTimeMillis();
         ResponseModel responseModel = null;
         String fileName = file.getOriginalFilename();
-        Path path = Paths.get( mediaRootDir,fileName);
-        if (Files.exists(path)){
+        Path targetPath = Paths.get( mediaRootDir,fileName);
+        if (Files.exists(targetPath)){
             String log = "替换上传 文件已经存在！：文件名："+fileName;
             responseModel = ResponseModel.warp(EXISTED).setLog(log);
         }else{
             try {
-                file.transferTo(path);
+                file.transferTo(targetPath);
                 /*返回值*/
                 long stop = System.currentTimeMillis();
                 String log = "替换下载 成功！：文件名："+fileName+",文件大小/耗时："+file.getSize()+"/"+(stop-start);
                 responseModel = ResponseModel.warp(SUCCESS).setLog(log);
             } catch (IOException e) {
+                try {
+                    Files.deleteIfExists(targetPath);
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
                 long stop = System.currentTimeMillis();
                 String log = "替换下载 失败！：文件名："+fileName+",文件大小/耗时："+file.getSize()+"/"+(stop-start);
                 responseModel = ResponseModel.warp(FAILED).setLog(log);
@@ -82,9 +78,6 @@ public class MediaReplaceHandler2 {
 
     @RecordLog
     public ResponseModel downMedia(String fileName){
-
-
-
         long start = System.currentTimeMillis();
         ResponseModel responseModel = null;
         Path targetPath = Paths.get(mediaRootDir, fileName);
@@ -101,6 +94,11 @@ public class MediaReplaceHandler2 {
                 String log = "替换下载 成功！：文件名："+fileName+",文件大小/耗时："+length+"/"+(stop-start);
                 responseModel= ResponseModel.warp(SUCCESS).setResult(fileName).setLog(log);
             } catch (Exception e) {
+                try {
+                    Files.deleteIfExists(targetPath);
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
                 long stop = System.currentTimeMillis();
                 String log = "替换下载 失败！：文件名："+fileName+",耗时："+(stop-start);
                 responseModel= ResponseModel.warp(FAILED).setResult(fileName).setLog(log);
@@ -116,6 +114,7 @@ public class MediaReplaceHandler2 {
 
 
 
+    @RecordLog
     public void replaceMediaReport(ResponseModel model){
         MultiValueMap<String, Object> param = new LinkedMultiValueMap<>();
         param.add("report",  JSON.toJSONString(model));
